@@ -9,7 +9,9 @@ function setup() {
       },
     },
   };
-  capture = createCapture(constraints, function(stream));
+  capture = createCapture(constraints, function(stream) {
+    console.log(stream);
+  });
   //capture.size(320, 240);
   capture.hide();
 }
