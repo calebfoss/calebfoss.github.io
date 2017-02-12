@@ -10,6 +10,7 @@ function setup() {
       }
     }
   });
+  //blah blah
   capture.size(320, 240);
   //capture.hide();
 }
