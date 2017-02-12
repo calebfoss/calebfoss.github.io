@@ -2,7 +2,7 @@ var capture;
 
 function setup() {
   createCanvas(390, 240);
-  capture = createCapture(createCapture({
+  capture = createCapture({
     audio: false,
     video: {
       facingMode: {
