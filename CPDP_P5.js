@@ -2,7 +2,14 @@ var capture;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  capture = createCapture(VIDEO);
+  var constraints = {
+    video: {
+      mandatory: {
+      	facingMode: "environment"
+      },
+    },
+  };
+  capture = createCapture(constraints, function(stream);
   //capture.size(320, 240);
   capture.hide();
 }
