@@ -1,15 +1,14 @@
 var capture;
 
 function setup() {
-  createCanvas(390, 240);
+  createCanvas(windowWidth, windowHeight);
   capture = createCapture(VIDEO);
-  //blah blah
-  capture.size(320, 240);
+  //capture.size(320, 240);
   //capture.hide();
 }
 
 function draw() {
   background(255);
-  image(capture, 0, 0, 320, 240);
+  image(capture, 0, 0, width, width*capture.height/capture.width);
   filter('INVERT');
 }
