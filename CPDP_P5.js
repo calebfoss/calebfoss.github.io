@@ -1,19 +1,33 @@
 var capture;
+var options;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  var constraints = {
-    video: {
-      mandatory: {
-      	facingMode: "environment"
-      },
-    },
-  };
-  capture = createCapture(constraints, function(stream);
-  //capture.size(320, 240);
-  capture.hide();
+  
+  // This line triggers a print of all detected input sources.
+  // It can be removed after the source ID has been determined.
+  MediaStreamTrack.getSources(gotSources);
+  
+  // var options = {
+  //   video: {
+  //     optional: [{
+  //       sourceId: 'put_desired_source_id_here'
+  //     }]
+  //   }
+  // };
+  
+  capture = createCapture(options);
+
 }
 
-function draw() {
-  image(capture, 0, 0, width, width*capture.height/capture.width);
+// This method can be removed after the source ID has been determined.
+function gotSources(sources) {
+  for (var i = 0; i !== sources.length; ++i) {
+    if (sources[i].kind === 'audio') {
+      console.log('audio: '+sources[i].label+' ID: '+sources[i].id);
+    } else if (sources[i].kind === 'video') {
+      console.log('video: '+sources[i].label+' ID: '+sources[i].id);
+    } else {
+      console.log('Some other kind of source: ', sources[i]);
+    }
+  }
 }
