@@ -2,7 +2,7 @@ var capture;
 
 function setup() {
   createCanvas(480, 120);
-  capture = createCapture();
+  capture = createCapture({video:{deviceId:'camera 0, back facing'}});
 }
 
 function draw() {
