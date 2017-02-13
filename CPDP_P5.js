@@ -1,15 +1,9 @@
 var capture;
 
-function setup() {
-  createCanvas(480, 120);
-  var constraints = {
-    video: {
-        facingMode: "environment"
-  }
-  };
-  capture = createCapture(constraints, function(stream) {
-    console.log(stream);
-  });
+function setup(){
+	createCanvas(windowWidth, windowHeight);
+capture = createCapture({
+	video: {facingMode:{exact: 'environment'}}});
 }
 
 function draw(){
