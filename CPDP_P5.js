@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @calebfoss
- Sign out
- Watch 29
-  Star 48
-  Fork 25 ITPNYU/ICM-2015
- Code  Issues 1  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathICM-2015/09_video_sound/02_capture/13_get_sources/sketch.js
-904b555  on Oct 27, 2015
-@lmccart lmccart adding get sources example
-1 contributor
-RawBlameHistory     
-Executable File  40 lines (33 sloc)  1.2 KB
 // 1. Run this example to print to console all the sources.
 // 2. Determine the ID of the video source you'd like to use.
 // 3. Place the ID as a string where it says 'put_desired_source_id_here'.
