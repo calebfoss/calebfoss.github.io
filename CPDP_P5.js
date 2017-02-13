@@ -2,7 +2,7 @@ var capture;
 
 function setup() {
   createCanvas(480, 120);
-  capture = createCapture(VIDEO);
+  capture = createCapture();
 }
 
 function draw() {
