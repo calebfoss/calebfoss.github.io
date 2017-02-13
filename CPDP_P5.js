@@ -3,7 +3,7 @@ var capture;
 function setup(){
 	createCanvas(windowWidth, windowHeight);
 capture = createCapture({
-	video: {facingMode:{exact: 'environment'}}});
+	video: {deviceId: 'camera 0, facing back'}});
 }
 
 function draw(){
