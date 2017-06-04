@@ -23,6 +23,8 @@ img {
 }
 .container .row .full-width img{
 	max-height: 100%;
+	margin: auto;
+	display: block;
 }
 h1 {
 	font-family: cabin;
