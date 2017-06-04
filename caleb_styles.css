@@ -18,7 +18,11 @@ img {
 .container .row .full-width{
 	margin-left: auto;
 	margin-right: auto;
+	max-height: 67vh;
 	height: 67vh;
+}
+.container .row .full-width img{
+	max-height: 100%;
 }
 h1 {
 	font-family: cabin;
