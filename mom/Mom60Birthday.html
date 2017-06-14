@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Mom!</title>
+  <meta name="description" content="Happy Birthday Mom!">
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous" />
+      <img src="https://scontent.ford1-1.fna.fbcdn.net/v/t1.0-9/15894841_1244168872330965_8017207464225903912_n.jpg?oh=8cf0edb2d5c4d82e664d1c07c882d7fc&amp;oe=59E67D0F" crossorigin="anonymous">
+      <img src="http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
+      <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/https://flic.kr/p/wnVGK" crossorigin="anonymous" />
+      <a-asset-item id="dawningFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844"></a-asset-item>
+      <a-asset-item id="exoFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150"></a-asset-item>
+      <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
+    </a-assets>
+
+    <!--<a-entity scale="2 2 2" geometry="primitive: torusKnot" position="0 6 -10" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">-->
+    <a-entity
+    rotation="0 0 0"
+    align: center
+    text-geometry="align: center; value: 60; font: #dawningFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.2; curveSegments: 12; size: 5; height: 0;"
+    material="color:gold; metalness:1; roughness: 0; sphericalEnvMap: #pink;"
+    >
+    <a-animation easing="linear" attribute="position" dur="4000" from="-5 4 -10" direction="alternate" to="5 4 -10" repeat="indefinite"></a-animation>
+  </a-entity>
+
+  <a-entity position="-3 1 -6" rotation="5 0 0">
+        <!--<a-entity
+          rotation="0 0 5"
+          position="0 2 0.2"
+          text-geometry="value: Virtual Reality; font: #dawningFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;"
+          material="color:lavenderblush; metalness:1; roughness: 0; sphericalEnvMap: #pink;"
+          ></a-entity>-->
+
+          <a-entity position="-0.5 0.5 -0.5" scale="0.6 1.2 1" text-geometry="value: Happy Birthday; font: #exoFont; bevelEnabled: true; bevelSize: 0.1; bevelThickness: 0.1; curveSegments: 1; size: 1.5; height: 0.5;" material="color:#89cff0; metalness:0.9; roughness: 0.05; sphericalEnvMap: #chrome;">
+            <a-animation easing="linear" attribute="rotation" dur="1500" from="-30 0 0" direction="alternate" to="30 0 0" repeat="indefinite"></a-animation>
+          </a-entity>
+
+          <a-entity text-geometry="value: Mom; font: #exoItalicFont; style: italic; size: 0.8; weight: bold; height: 0;"
+          material="shader: flat; color: white">
+          <a-animation easing="linear" attribute="position" dur="2000" from="2 0 0.3" direction="alternate" to="2 0 5" repeat="indefinite"></a-animation>
+        </a-entity>
+        <a-entity text-geometry="value: Mom; font: #exoItalicFont; style: italic; size: 0.8; weight: bold; height: 0; bevelEnabled: true; bevelSize: 0.04; bevelThickness: 0.04; curveSegments: 1"
+        material="shader: flat; color: white; transparent: true; opacity: 0.4"><a-animation easing="linear" attribute="position" dur="2000" from="2 0 0.3" direction="alternate" to="2 0 5" repeat="indefinite"></a-animation></a-entity>
+      </a-entity>
+
+      <a-entity
+      geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
+      material="color: black; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4"></a-entity>
+
+      <a-entity light="color: #ccccff; intensity: 1; type: ambient;" visible=""></a-entity>
+      <a-entity light="color: ffaaff; intensity: 1.5" position="5 5 5"></a-entity>
+      <a-entity light="color: white; intensity: 0.5" position="-5 5 15"></a-entity>
+      <a-entity light="color: white; type: ambient;"></a-entity>
+
+      <a-sky color="#00299c" rotation="0 -90 0"></a-sky>
+    </a-scene>
+  </body>
+  </html>
