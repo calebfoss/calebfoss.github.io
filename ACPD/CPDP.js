@@ -235,6 +235,3 @@ function fadeIn(id){
 		setTimeout(function(){fadeIn(id)},1);
 	}
 }
-console.log(data);
-document.getElementById("text").innerHTML = text;
-}
