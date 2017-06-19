@@ -10,11 +10,11 @@ p{
 	font-size: 138%;
 }
 div {
-	width: 500px;
 	max-width: 80vw;
 	padding: 20px;
 }
 .center{
+	width: 500px;
 	margin: auto;
 }
 .button{
@@ -27,4 +27,9 @@ div {
     font-size: 100%;
     padding: 0px 5px;
     margin: 4px 4px;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
 }
