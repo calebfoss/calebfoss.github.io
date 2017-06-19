@@ -59,7 +59,7 @@ function findClosest(LatLng){
 }
 
 window.onload = function(){
-	d3.csv("data.csv", function(data) {
+	d3.csv("Data.csv", function(data) {
 		Data = data;
 	});
 	if(!isChrome){
