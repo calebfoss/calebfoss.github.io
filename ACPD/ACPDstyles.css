@@ -1,3 +1,6 @@
+
+
+
 body {
     font-family: 'Anaheim';font-size: 16px;
 }
@@ -10,4 +13,12 @@ div {
 }
 .center{
 	margin: auto;
+}
+
+html{
+	font-size:110%;
+} 
+
+@media(min-width:60em){
+	html{font-size: 20%}
 }

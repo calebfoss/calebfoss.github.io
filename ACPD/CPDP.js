@@ -32,16 +32,6 @@ function showPosition(position) {
 	document.getElementById('AddressFound').innerHTML = '';
 	LatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 	findClosest(LatLng);
-	var changedPosition = false;
-	if(lat != position.coords.latitude){
-		lat = position.coords.latitude;
-		changedPosition = true;
-	}
-	if(lng != position.coords.longitude){
-		lng = position.coords.longitude;
-		changedPosition = true;
-	}
-	if(changedPosition) findClosest(lat, lng); 
 }
 
 function findClosest(LatLng){
@@ -69,7 +59,7 @@ function findClosest(LatLng){
 }
 
 window.onload = function(){
-	d3.csv("Data.csv", function(data) {
+	d3.csv("data.csv", function(data) {
 		Data = data;
 	});
 	if(!isChrome){
@@ -96,8 +86,6 @@ function cardinal(LatLng,lat2,lng2){
 	if(index > 7)
 		index = 0;
 	var card = bearings[index];
-	console.log(heading/360);
-	var card = bearings[Math.round(heading/45)];
 	return card;
 }
 function checkPresent(value){
