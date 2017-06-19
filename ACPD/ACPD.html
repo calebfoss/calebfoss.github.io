@@ -5,5 +5,32 @@
 <script src="humanize-master/dist/humanize.min.js"></script>
 <script src="/assets/gmap3.js?body=1" type="text/javascript"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="ACPDstyles.css">
+<link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+
+<div class="center">
+<p id='AddressFound'></p>
 <p id="text">Loading...</p>
-<button type="button" onclick="getLocation()">Refresh</button>
+</div>
+
+<div>
+<button type="button" onclick="getGPSLocation()" id="GPS" visibility='hidden'>Use GPS location</button>
+<br>
+<br>
+<p>Type in address: </p><input type='text' id='TypeAddress'><button type="submit" onclick="getTypeLocation()" id="SubmitAddress">Submit</button>
+</div>
+
+<script>
+$(function() {
+    $("input").keypress(function (e) {
+        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+            getTypeLocation();
+            console.log('Pressed enter');
+            return false;
+        } else {
+            return true;
+        }
+    });
+});
+</script>
