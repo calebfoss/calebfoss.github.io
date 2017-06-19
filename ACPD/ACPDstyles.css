@@ -8,7 +8,8 @@ p{
 	font-size: 138%;
 }
 div {
-	max-width: 500px;
+	width: 500px;
+	max-width: 50%;
 	padding: 20px;
 }
 .center{
