@@ -9,7 +9,7 @@ function getGPSLocation() {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(showPosition);
 	} else {
-		document.getElementById("text").innerHTML = "Geolocation is not supported by this browser.";
+		alert("Geolocation is not supported by this browser.");
 	}
 }
 function getTypeLocation() {
