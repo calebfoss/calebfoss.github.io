@@ -1,6 +1,9 @@
 body {
     font-family: 'Anaheim';font-size: 22px;
 }
+p{
+	font-size: 100%;
+}
 div {
 	max-width: 500px;
 	padding: 20px;
