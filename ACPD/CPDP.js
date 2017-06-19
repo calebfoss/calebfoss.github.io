@@ -55,7 +55,7 @@ function cardinal(lat1,lng1,lat2,lng2){
 	var to   = new google.maps.LatLng(lat2, lng2);
 	var bearings = ['north','northeast','east','southeast','south','southwest','west','northwest'];
 	var heading = google.maps.geometry.spherical.computeHeading(from,to);
-	var card = bearings[Math.round(heading/360)];
+	var card = bearings[Math.round(heading/45)];
 	return card;
 }
 function checkPresent(value){
