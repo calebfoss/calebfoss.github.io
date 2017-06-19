@@ -29,9 +29,22 @@ function getTypeLocation() {
 }
 
 function showPosition(position) {
+<<<<<<< HEAD
 	document.getElementById('AddressFound').innerHTML = '';
 	LatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 	findClosest(LatLng);
+=======
+	var changedPosition = false;
+	if(lat != position.coords.latitude){
+		lat = position.coords.latitude;
+		changedPosition = true;
+	}
+	if(lng != position.coords.longitude){
+		lng = position.coords.longitude;
+		changedPosition = true;
+	}
+	if(changedPosition) findClosest(lat, lng); 
+>>>>>>> origin/master
 }
 
 function findClosest(LatLng){
@@ -59,7 +72,7 @@ function findClosest(LatLng){
 }
 
 window.onload = function(){
-	d3.csv("data.csv", function(data) {
+	d3.csv("Data.csv", function(data) {
 		Data = data;
 	});
 	if(!isChrome){
@@ -80,6 +93,7 @@ function cardinal(LatLng,lat2,lng2){
 	var to   = new google.maps.LatLng(lat2, lng2);
 	var bearings = ['north','northeast','east','southeast','south','southwest','west','northwest'];
 	var heading = google.maps.geometry.spherical.computeHeading(from,to);
+<<<<<<< HEAD
 	var index = Math.round(heading/45);
 	if(index < 0)
 		index += 7;
@@ -87,6 +101,9 @@ function cardinal(LatLng,lat2,lng2){
 		index = 0;
 	var card = bearings[index];
 	console.log(heading/360);
+=======
+	var card = bearings[Math.round(heading/45)];
+>>>>>>> origin/master
 	return card;
 }
 function checkPresent(value){
@@ -217,6 +234,7 @@ function generateText(data,dist){
 	document.getElementById("text").innerHTML = text;
 	document.getElementById('GPS').innerHTML = 'Refresh GPS location';
 }
+<<<<<<< HEAD
 
 function fadeIn(id){
 	if(document.getElementById(id).style.opacity < 1){
@@ -224,3 +242,8 @@ function fadeIn(id){
 		setTimeout(function(){fadeIn(id)},1);
 	}
 }
+=======
+console.log(data);
+document.getElementById("text").innerHTML = text;
+}
+>>>>>>> origin/master
