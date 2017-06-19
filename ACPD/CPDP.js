@@ -13,6 +13,7 @@ function getGPSLocation() {
 	}
 }
 function getTypeLocation() {
+	document.getElementById("text").innerHTML = '';
 	var address = document.getElementById('TypeAddress').value;
 	console.log(address);
 	var geocoder = new google.maps.Geocoder();
