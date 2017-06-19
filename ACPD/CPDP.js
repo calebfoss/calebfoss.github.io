@@ -6,8 +6,13 @@ var latestYear;
 var isChrome = !!window.chrome && !!window.chrome.webstore;
 
 function getGPSLocation() {
+	var wait = 0;
+	if(document.getElementById('text').innerHTML != ''){
+		fadeOut('text');
+		wait = 500;
+	}
 	if (navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(showPosition);
+		setTimeout(function(){navigator.geolocation.getCurrentPosition(showPosition)},wait);
 	} else {
 		alert("Geolocation is not supported by this browser.");
 	}
@@ -222,5 +227,12 @@ function fadeIn(id){
 	if(document.getElementById(id).style.opacity < 1){
 		document.getElementById(id).style.opacity = parseFloat(document.getElementById(id).style.opacity) + 0.0025;
 		setTimeout(function(){fadeIn(id)},1);
+	}
+}
+
+function fadeOut(id){
+	if(document.getElementById(id).style.opacity > 0){
+		document.getElementById(id).style.opacity = parseFloat(document.getElementById(id).style.opacity) - 0.005;
+		setTimeout(function(){fadeOut(id)},1);
 	}
 }

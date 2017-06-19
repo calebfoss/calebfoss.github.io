@@ -9,19 +9,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="ACPDstyles.css">
 <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
-
+<body>
 <div class="center">
 <p id='AddressFound'></p>
 <p id="text">Loading...</p>
 </div>
 
-<div>
+<div class="footer">
 <button type="button" class="button" onclick="getGPSLocation()" id="GPS" visibility='hidden'>Use GPS location</button>
 <br>
 <p>Type in address: </p><input type='text' id='TypeAddress' style='margin:4px 4px;'><button type="submit" class="button" onclick="getTypeLocation()" id="SubmitAddress">Submit</button>
 <br>
 <p>The data used in this project was gathered from the <a href="http://cpdb.co">Citizens Police Data Project</a> by the <a href="http://invisible.institute">Invisible Institute</a>.</p>
 </div>
+</body>
 
 <script>
 $(function() {
