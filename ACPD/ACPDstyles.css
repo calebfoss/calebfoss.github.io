@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Anaheim';font-size: 16px;
+    max-width: 100vw;
 }
 p{
 	font-size: 138%;
@@ -14,12 +15,4 @@ div {
 }
 .center{
 	margin: auto;
-}
-
-html{
-	font-size:110%;
-} 
-
-@media(min-width:60em){
-	html{font-size: 20%}
 }
