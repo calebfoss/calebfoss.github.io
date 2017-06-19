@@ -13,11 +13,11 @@ function getLocation() {
 function showPosition(position) {
 	var changedPosition = false;
 	if(lat != position.coords.latitude){
-		// lat = position.coords.latitude;
+		lat = position.coords.latitude;
 		changedPosition = true;
 	}
 	if(lng != position.coords.longitude){
-		// lng = position.coords.longitude;
+		lng = position.coords.longitude;
 		changedPosition = true;
 	}
 	if(changedPosition) findClosest(lat, lng); 
@@ -37,7 +37,7 @@ function findClosest(lat, lng){
 }
 
 window.onload = function(){
-	d3.csv("data.csv", function(data) {
+	d3.csv("Data.csv", function(data) {
 		Data = data;
 	});
 	getLocation();
