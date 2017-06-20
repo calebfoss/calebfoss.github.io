@@ -61,7 +61,11 @@ function findClosest(LatLng){
 				latestYear = year;
 		}
 	}
-	generateText(Data[closestIndex], closestDistance);
+	if(closestDistance > 1609.34){
+		document.getElementById('text').innerHTML = 'Your location is more than one mile from the nearest misconduct complaint. Make sure you are using a Chicago location.'
+	}
+	else
+		generateText(Data[closestIndex], closestDistance);
 }
 
 window.onload = function(){
@@ -91,9 +95,9 @@ function cardinal(LatLng,lat2,lng2){
 	var to   = new google.maps.LatLng(lat2, lng2);
 	var bearings = ['north','northeast','east','southeast','south','southwest','west','northwest'];
 	var heading = google.maps.geometry.spherical.computeHeading(from,to);
+	if(heading < 0)
+		heading += 360;
 	var index = Math.round(heading/45);
-	if(index < 0)
-		index += 7;
 	if(index > 7)
 		index = 0;
 	var card = bearings[index];
