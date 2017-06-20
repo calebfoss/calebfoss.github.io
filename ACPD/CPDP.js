@@ -68,8 +68,13 @@ window.onload = function(){
 	d3.csv("Data.csv", function(data) {
 		Data = data;
 	});
+	console.log(isChrome);
 	if(!isChrome){
 		document.getElementById('GPS').style.visibility = "visible"; 
+	}
+	else{
+		document.getElementById('GPS').style.visibility = "hidden";
+		document.getElementById('TypePrompt').innerHTML = 'GPS location not available on Chrome. Please use another browser or<br>Type in address: ';
 	}
 	document.getElementById("text").innerHTML = '';
 }
