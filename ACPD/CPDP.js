@@ -3,7 +3,7 @@ var LatLng;
 var mileCount;
 var earliestYear;
 var latestYear;
-var isChrome = !!window.chrome && !!window.chrome.webstore;
+var isChrome = window.navigator.vendor=="Google Inc"||(!!window.chrome && !!window.chrome.webstore);
 
 function getGPSLocation() {
 	var wait = 0;
@@ -72,7 +72,7 @@ window.onload = function(){
 	d3.csv("Data.csv", function(data) {
 		Data = data;
 	});
-	console.log(isChrome);
+	console.log(window.navigator.vendor);
 	if(!isChrome){
 		document.getElementById('GPS').style.visibility = "visible"; 
 	}
