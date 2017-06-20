@@ -3,7 +3,7 @@ var LatLng;
 var mileCount;
 var earliestYear;
 var latestYear;
-var isChrome = window.navigator.vendor=="Google Inc"||(!!window.chrome && !!window.chrome.webstore);
+var isChrome = navigator.userAgent.match('CriOS')||navigator.userAgent.indexOf("Chrome") != -1||(!!window.chrome && !!window.chrome.webstore);
 
 function getGPSLocation() {
 	var wait = 0;
