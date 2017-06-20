@@ -72,7 +72,7 @@ window.onload = function(){
 	d3.csv("Data.csv", function(data) {
 		Data = data;
 	});
-	console.log(window.navigator.vendor);
+	alert(navigator.userAgent.indexOf("Chrome"));
 	if(!isChrome){
 		document.getElementById('GPS').style.visibility = "visible"; 
 	}
