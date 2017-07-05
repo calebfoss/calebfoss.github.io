@@ -3,7 +3,7 @@ var LatLng;
 var mileCount;
 var earliestYear;
 var latestYear;
-var isChrome = navigator.userAgent.match('CriOS')||navigator.userAgent.indexOf("Chrome") != -1||(!!window.chrome && !!window.chrome.webstore);
+var isChrome = (navigator.userAgent.match('CriOS')||navigator.userAgent.indexOf("Chrome") != -1||(!!window.chrome && !!window.chrome.webstore))&&!navigator.userAgent.match(/SamsungBrowser/i);
 
 function getGPSLocation() {
 	var wait = 0;
@@ -70,7 +70,7 @@ function findClosest(LatLng){
 
 window.onload = function(){
 	alert("navigator.userAgent.match('CriOS'): "+navigator.userAgent.match('CriOS')+' navigator.userAgent.indexOf("Chrome"): '+
-	navigator.userAgent.indexOf("Chrome")+' !!window.chrome: '+window.chrome+' window.chrome.webstore: '+window.chrome.webstore);
+	navigator.userAgent.indexOf("Chrome")+' !!window.chrome: '+window.chrome+' window.chrome.webstore: '+window.chrome.webstore+' navigator.userAgent.match(/SamsungBrowser/i): '+navigator.userAgent.match(/SamsungBrowser/i));
 	d3.csv("Data.csv", function(data) {
 		Data = data;
 	});
