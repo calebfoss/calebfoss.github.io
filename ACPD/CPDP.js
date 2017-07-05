@@ -69,6 +69,8 @@ function findClosest(LatLng){
 }
 
 window.onload = function(){
+	alert("navigator.userAgent.match('CriOS'): "+navigator.userAgent.match('CriOS')+' navigator.userAgent.indexOf("Chrome"): '+
+	navigator.userAgent.indexOf("Chrome")+' !!window.chrome: '+window.chrome+' window.chrome.webstore: '+window.chrome.webstore);
 	d3.csv("Data.csv", function(data) {
 		Data = data;
 	});
