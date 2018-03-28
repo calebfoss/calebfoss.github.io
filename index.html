@@ -119,23 +119,23 @@
   }, false);
   function fitText(){
     if(loaded){
-      var headings = document.getElementsByTagName('h3');
-      var div = document.getElementsByClassName('col-sm-4');
-      var divHeight = 500;
-      for(var i = 0; i < headings.length; i++){
-        headings[i].style.fontSize = "1.39em";
-      }
-      for(var i = 0; i < div.length; i++){
-        divHeight = Math.min(div[i].clientHeight,divHeight);
-      }
-      for(var i = 0; i < div.length; i++){
-        var size = parseFloat(window.getComputedStyle(headings[i],null).getPropertyValue('font-size'));
-        while(div[i].clientHeight > divHeight){
-          size -= 1;
-          headings[i].style.fontSize = size+'px';
-        }
-      }
-    }
+    //   var headings = document.getElementsByTagName('h3');
+    //   var div = document.getElementsByClassName('col-sm-4');
+    //   var divHeight = 500;
+    //   for(var i = 0; i < headings.length; i++){
+    //     headings[i].style.fontSize = "1.39em";
+    //   }
+    //   for(var i = 0; i < div.length; i++){
+    //     divHeight = Math.min(div[i].clientHeight,divHeight);
+    //   }
+    //   for(var i = 0; i < div.length; i++){
+    //     var size = parseFloat(window.getComputedStyle(headings[i],null).getPropertyValue('font-size'));
+    //     while(div[i].clientHeight > divHeight){
+    //       size -= 1;
+    //       headings[i].style.fontSize = size+'px';
+    //     }
+    //   }
+    // }
   }
 </script>
 <footer class="text-center">
