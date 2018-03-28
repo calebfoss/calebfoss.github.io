@@ -27,7 +27,6 @@ img {
 	display: block;
 }
 h1 {
-	font-family: cabin;
 	font-style: normal;
 	font-weight: 400;
 	font-size: small;
@@ -35,7 +34,7 @@ h1 {
 }
 body  {
 	background-color: #F5F5F5;
-	font-family: cabin;
+	font-family: roboto;
 	font-style: normal;
 	font-weight: 400;
 	color: #0C0C0C;
@@ -43,16 +42,12 @@ body  {
 iframe {
 	margin: 0 auto;
 	display: block;
-	max-width: 100%;
-	min-width: 100%;
-	min-width: 90%;
 }
 .navbar-brand {
 	font-style: normal;
 	font-weight: 400;
 }
 h3 {
-	font-family: cabin;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.39em;
@@ -60,14 +55,12 @@ h3 {
 }
 
 h6 {
-	font-family: cabin;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1em;
 	text-align: center;
 }h4 {
 	font-size: 2em;
-	font-family: cabin;
 	font-style: normal;
 	font-weight: 400;
 	text-align: center;
