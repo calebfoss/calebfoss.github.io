@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
-<body onload="fitText()" onresize="fitText()">
+<body onresize="fitText()">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1"> <span class="sr-only">Toggle //</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -111,21 +111,29 @@
   </div>
 </section>
 <script>
+  var loaded = false;
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("loaded");
+    loaded = true;
+    fitText();
+  }, false);
   function fitText(){
-    var headings = document.getElementsByTagName('h3');
-    var div = document.getElementsByClassName('col-sm-4');
-    var divHeight = 500;
-    for(var i = 0; i < headings.length; i++){
-      headings[i].style.fontSize = "1.39em";
-    }
-    for(var i = 0; i < div.length; i++){
-      divHeight = Math.min(div[i].clientHeight,divHeight);
-    }
-    for(var i = 0; i < div.length; i++){
+    if(loaded){
+      var headings = document.getElementsByTagName('h3');
+      var div = document.getElementsByClassName('col-sm-4');
+      var divHeight = 500;
+      for(var i = 0; i < headings.length; i++){
+        headings[i].style.fontSize = "1.39em";
+      }
+      for(var i = 0; i < div.length; i++){
+        divHeight = Math.min(div[i].clientHeight,divHeight);
+      }
+      for(var i = 0; i < div.length; i++){
         var size = parseFloat(window.getComputedStyle(headings[i],null).getPropertyValue('font-size'));
-      while(div[i].clientHeight > divHeight){
-        size -= 1;
-        headings[i].style.fontSize = size+'px';
+        while(div[i].clientHeight > divHeight){
+          size -= 1;
+          headings[i].style.fontSize = size+'px';
+        }
       }
     }
   }
