@@ -128,6 +128,7 @@
       for(var i = 0; i < div.length; i++){
         divHeight = Math.min(div[i].clientHeight,divHeight);
       }
+      console.log(divHeight);
       for(var i = 0; i < div.length; i++){
         var size = parseFloat(window.getComputedStyle(headings[i],null).getPropertyValue('font-size'));
         while(size > 4 && div[i].clientHeight > divHeight){
