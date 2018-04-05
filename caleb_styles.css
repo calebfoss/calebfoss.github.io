@@ -83,7 +83,8 @@ a {
 	color: #0C0C0C;
 }
 a:hover {
-	color: #0C0C0C;	
+	color: #0C0C0C;
+	text-decoration: none;	
 }
 
 .container .row .centered-block {
