@@ -10,7 +10,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript">
 		var file = ['1_CROSS_','2_SPIRALS_','3_GEARS_','4_PINS_'];	//Stores the opening video file
-		var urls = ['https://www.youtube.com/embed/hyeZq9_sqLg?start=61&autoplay=1','https://www.youtube.com/embed/eB01T_p9jJQ?start=61&autoplay=1','https://www.youtube.com/embed/Rj09OgW8Ya0?start=61&autoplay=1','https://www.youtube.com/embed/KcadVMzUuGM?start=61&autoplay=1']	//Urls for youtube uploads starting at 60s with autoplay enabled
+		var urls = ['https://www.youtube.com/embed/hyeZq9_sqLg?start=61&autoplay=1','https://www.youtube.com/embed/eB01T_p9jJQ?start=61&autoplay=1','https://www.youtube.com/embed/Rj09OgW8Ya0?start=61&autoplay=1','https://www.youtube.com/embed/KcadVMzUuGM?start=61&autoplay=1'];	//Urls for youtube uploads starting at 60s with autoplay enabled
 		var index;
 		var video = document.getElementById('video');
 		var source = document.createElement('source');
@@ -24,6 +24,7 @@
 			playText.onclick = function(){startNewVideo()};
 			playText.innerHTML = 'SIEGE<br>click to play';
 			vidDiv.appendChild(playText);
+			urls = ['https://www.youtube.com/watch?v=hyeZq9_sqLg&t=1m1s&autoplay=1','https://www.youtube.com/watch?v=eB01T_p9jJQ&t=1m1s&autoplay=1','https://www.youtube.com/watch?v=Rj09OgW8Ya0&t=1m1s&autoplay=1','https://www.youtube.com/watch?v=KcadVMzUuGM&t=1m1s&autoplay=1'];
 		} else {
 			startNewVideo();
 			console.log(location);
