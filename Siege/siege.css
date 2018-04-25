@@ -5,8 +5,22 @@ body{
 	background: black;
 	width: 100%;
 }
-#link:hover{
+h1 {/*Click to play opening link*/
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 3em;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+h1:hover{
 	cursor: help;
+	color: #c8c8c8;
 }
 .video-container {
 	position: absolute;

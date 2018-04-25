@@ -1,22 +1,40 @@
 <link rel="stylesheet" href="siege.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"
 <body>
 
-	<div onClick="jumpAhead()" class="video-container" id='link'>
+	<div class="video-container" id='vidDiv'>
 		<video id='video'>
 			<source id='source'>
-		</video>
-	</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript">
+			</video>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript">
 		var file = ['1_CROSS_','2_SPIRALS_','3_GEARS_','4_PINS_'];	//Stores the opening video file
 		var urls = ['https://www.youtube.com/embed/hyeZq9_sqLg?start=61&autoplay=1','https://www.youtube.com/embed/eB01T_p9jJQ?start=61&autoplay=1','https://www.youtube.com/embed/Rj09OgW8Ya0?start=61&autoplay=1','https://www.youtube.com/embed/KcadVMzUuGM?start=61&autoplay=1']	//Urls for youtube uploads starting at 60s with autoplay enabled
 		var index;
 		var video = document.getElementById('video');
 		var source = document.createElement('source');
+		var vidDiv = document.getElementById('vidDiv');
 		var fileSuffix = "opening";	//added because file names end with 'opening'
-		startNewVideo();
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//For mobile devices, this creates clickable text to start playing the video. Otherwise, the video will autoplay.
+		if(location.origin === "file://" || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			var playText = document.createElement('h1');
+			playText.onclick = function(){startNewVideo()};
+			playText.innerHTML = 'SIEGE<br>click to play';
+			vidDiv.appendChild(playText);
+		} else {
+			startNewVideo();
+			console.log(location);
+		}
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 		function startNewVideo(){
+			if(playText){
+			vidDiv.removeChild(playText);			//If on a mobile device, the 'click to play' text will be removed
+			}
 			index = Math.floor(Math.random()*4);	//Picks a random number and use it as an index for the video file array
 			source.setAttribute("src",file[index]+fileSuffix+".mp4");	//Sets the source element based on random index
 			video.appendChild(source);	//Attaches source to video element
@@ -24,7 +42,11 @@
 			video.play();
 			video.ontimeupdate = function(){loop()};
 			document.getElementById('video').controls = false;	//Removes play controls for video
-		}
+			setTimeout(function(){
+				vidDiv.onclick = function(){jumpAhead()};
+				vidDiv.style = "cursor: help";
+			});
+;		}
 		function loop(){	//Starts the video over when it reaches 60 seconds
 			if(video.currentTime >= 60){
 				video.currentTime = 0;
