@@ -4,7 +4,7 @@
 <body>
 
 	<div class="video-container" id='vidDiv'>
-		<video id='video'>
+		<video id='video' muted>
 			<source id='source'>
 			</video>
 		</div>
@@ -22,8 +22,8 @@
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//For mobile devices, this creates clickable text to start playing the video. Otherwise, the video will autoplay.
-		if(location.origin === "file://" || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			video.muted = true;
+		if(!(location.origin === "file://" || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+			video.muted = false;
 		}
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
