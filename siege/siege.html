@@ -34,7 +34,6 @@
 			video.appendChild(source);	//Attaches source to video element
 			video.load();
 			video.play();
-			document.body.removeChild(document.getElementById('loading'));	//Delete the loading message
 			video.ontimeupdate = function(){loop()};
 			document.getElementById('video').controls = false;	//Removes play controls for video
 			setTimeout(function(){
