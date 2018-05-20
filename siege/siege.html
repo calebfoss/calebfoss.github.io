@@ -20,10 +20,8 @@
 		var titleSpellIndex = 0;
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		//For mobile devices, this creates clickable text to start playing the video. Otherwise, the video will autoplay.
-		if(!(location.origin === "file://" || /SamsungBrowser|Samsung|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
-			video.muted = false;
-		} else {
+		//For mobile devices, this switches the urls so that they will play from the correct time in the YouTube app
+		if(location.origin === "file://" || /SamsungBrowser|Samsung|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			urls = ['https://www.youtube.com/watch?v=hyeZq9_sqLg&t=1m1s&autoplay=1','https://www.youtube.com/watch?v=eB01T_p9jJQ&t=1m1s&autoplay=1','https://www.youtube.com/watch?v=Rj09OgW8Ya0&t=1m1s&autoplay=1','https://www.youtube.com/watch?v=KcadVMzUuGM&t=1m1s&autoplay=1'];
 		}
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
