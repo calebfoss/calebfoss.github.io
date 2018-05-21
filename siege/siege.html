@@ -43,7 +43,7 @@
 			setTimeout(function(){				//If the video hasn't started playing after 5 seconds, go directly to youtube
 				if(video.currentTime == 0)
 					giveUpOnVideo();
-			}, 5000);
+			}, 10000);
 			setTimeout(function(){				//Set the click to jump to youtube and the cursor ?
 				video.style.cursor = 'help';
 				vidDiv.onclick = function(){jumpAhead()};
