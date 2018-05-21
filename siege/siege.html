@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="siege.css">
 <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
 <body>
-<h1 id='loading'>Loading...</h1>
+	<h1 id='loading'>Loading...</h1>
 	<div class="video-container" id='vidDiv'>
 		<video id='video' muted>
 			<source id='source'>
@@ -33,22 +33,38 @@
 			source.setAttribute("src",file[index]+fileSuffix+".mp4");	//Sets the source element based on random index
 			video.appendChild(source);	//Attaches source to video element
 			video.load();
-			video.play();
+			video.play()
+			.catch((err) => {
+				if (err.name === 'NotAllowedError') {
+					giveUpOnVideo();
+				}
+			});;
 			video.ontimeupdate = function(){loop()};
-			document.getElementById('video').controls = false;	//Removes play controls for video
-			setTimeout(function(){
+			setTimeout(function(){				//If the video hasn't started playing after 5 seconds, go directly to youtube
+				if(video.currentTime == 0)
+					giveUpOnVideo();
+			}, 5000);
+			setTimeout(function(){				//Set the click to jump to youtube and the cursor ?
 				video.style.cursor = 'help';
 				vidDiv.onclick = function(){jumpAhead()};
 			});
-;		}
+			;		}
+
 		function loop(){	//Starts the video over when it reaches 60 seconds
 			if(video.currentTime >= 60){
 				video.currentTime = 0;
 				video.play();
 			}
 		}
+
 		function jumpAhead(){
 			window.location.href = urls[index];	//Redirects to corresponding youtube link when user clicks
+		}
+
+		function giveUpOnVideo(){	//Go directly to youtube from beginning of video
+			urls = ['https://www.youtube.com/watch?v=hyeZq9_sqLg&autoplay=1','https://www.youtube.com/watch?v=eB01T_p9jJQ&autoplay=1','https://www.youtube.com/watch?v=Rj09OgW8Ya0&autoplay=1','https://www.youtube.com/watch?v=KcadVMzUuGM&autoplay=1'];
+			window.location.href = urls[index];
+			window.location.href = urls[index];
 		}
 	</script>
 </body>
