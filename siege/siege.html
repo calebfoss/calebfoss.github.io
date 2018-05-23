@@ -35,11 +35,14 @@
 			video.load();
 			try {
 				video.play();
+				setTimeout(function(){
+					if(video.currentTime == 0)
+						muteVideo();
+				}, 2000);
 			}
 			catch(err){
 				try{
-					video.muted = true;
-					video.play();
+					muteVideo();
 				}
 				catch(err){
 					jumpAhead();
@@ -61,6 +64,10 @@
 				video.currentTime = 0;
 				video.play();
 			}
+		}
+		function muteVideo(){
+			video.muted = true;
+			video.play();
 		}
 
 		function jumpAhead(){
