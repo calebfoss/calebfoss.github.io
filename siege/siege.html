@@ -3,7 +3,7 @@
 <body>
 	<h1 id='loading'>Loading...</h1>
 	<div class="video-container" id='vidDiv'>
-		<video id='video' muted>
+		<video id='video'>
 			<source id='source'>
 			</video>
 		</div>
@@ -37,7 +37,13 @@
 				video.play();
 			}
 			catch(err){
-				jumpAhead();
+				try{
+					video.muted = true;
+					video.play();
+				}
+				catch(err){
+					jumpAhead();
+				}
 			}
 			video.ontimeupdate = function(){loop()};
 			setTimeout(function(){				//If the video hasn't started playing after 5 seconds, go directly to youtube
