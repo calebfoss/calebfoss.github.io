@@ -3,7 +3,7 @@
 <body>
 	<h1 id='loading'>Loading...</h1>
 	<div class="video-container" id='vidDiv'>
-		<video id='video' muted>
+		<video id='video'>
 			<source id='source'>
 			</video>
 		</div>
@@ -33,16 +33,25 @@
 			source.setAttribute("src",file[index]+fileSuffix+".mp4");	//Sets the source element based on random index
 			video.appendChild(source);	//Attaches source to video element
 			video.load();
-			video.play()
-			.catch((err) => {
-				if (err.name === 'NotAllowedError') {
-					giveUpOnVideo();
+			try {
+				video.play();
+				setTimeout(function(){
+					if(video.currentTime == 0)
+						muteVideo();
+				}, 2000);
+			}
+			catch(err){
+				try{
+					muteVideo();
 				}
-			});;
+				catch(err){
+					jumpAhead();
+				}
+			}
 			video.ontimeupdate = function(){loop()};
 			setTimeout(function(){				//If the video hasn't started playing after 5 seconds, go directly to youtube
 				if(video.currentTime == 0)
-					giveUpOnVideo();
+					jumpAhead();
 			}, 10000);
 			setTimeout(function(){				//Set the click to jump to youtube and the cursor ?
 				video.style.cursor = 'help';
@@ -56,15 +65,14 @@
 				video.play();
 			}
 		}
+		function muteVideo(){
+			video.muted = true;
+			video.play();
+		}
 
 		function jumpAhead(){
 			window.location.href = urls[index];	//Redirects to corresponding youtube link when user clicks
 		}
 
-		function giveUpOnVideo(){	//Go directly to youtube from beginning of video
-			urls = ['https://www.youtube.com/watch?v=hyeZq9_sqLg&t=28s&autoplay=1','https://www.youtube.com/watch?v=eB01T_p9jJQ&t=28s&autoplay=1','https://www.youtube.com/watch?v=Rj09OgW8Ya0&t=28s&autoplay=1','https://www.youtube.com/watch?v=KcadVMzUuGM&t=28s&autoplay=1'];
-			window.location.href = urls[index];
-			window.location.href = urls[index];
-		}
 	</script>
 </body>
