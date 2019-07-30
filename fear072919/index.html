@@ -1,0 +1,230 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://unpkg.com/lunr/lunr.js"></script>
+		<script language="javascript" type="text/javascript" src="transcription.js"></script>
+		<script language="javascript" type="text/javascript" src="fear.js"></script>
+		<style> 
+			html {
+				overflow: hidden;
+			}
+			body {
+				font-size: calc(16px + 0.25vw);
+				font-family:
+					'Noto Serif KR', sans-serif;
+				padding: 
+					0; 
+				margin: 
+					0;
+			}
+			h1 {
+				font-size: 8vh;
+				margin: 1vh 4vh;
+				max-height: 8vh;
+			}
+			h4 {
+				display: inline-block;
+			}
+			p {
+				max-width: 
+					700px;
+			}
+			button {
+				font-family: 'Noto Serif KR', sans-serif;
+				font-size: 
+					1em;
+				background-color:
+					#7A342C;
+				color:
+					white;
+				text-decoration: 
+					none;
+				display: 
+					inline-block;
+				border: 
+					none;
+				border-radius: 
+					5px;
+				margin: 
+					2px 2px;
+				padding: 
+					10px 10px;
+				flex-grow: 1;
+				cursor:
+					pointer;
+				transition: 
+					background-color 0.25s linear; 
+				-moz-transition: 
+					background-color 0.25s linear;  
+				-webkit-transition: 
+					background-color 0.25s linear; 
+				-ms-transition: 
+					background-color 0.25s linear;
+			}
+			button:hover {
+				background-color: 
+					#4F221C;
+			}
+			input {
+				font-family: 'Noto Serif KR', sans-serif;
+				width: 50%;
+				vertical-align: middle;
+			}
+			/* width */
+			::-webkit-scrollbar {
+				width: 10px;
+			}
+
+			/* Track */
+			::-webkit-scrollbar-track {
+				background: #f1f1f1; 
+			}
+
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+				background: #888; 
+			}
+
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+				background: #555; 
+			}
+			#outerContainer {
+				margin: auto;
+				/*				max-width: 1000px;*/
+			}
+			#keyword {
+				margin: 2vh;
+			}
+			#clearButton {
+				background: black;
+				font-size: 0.75em;
+			}
+			#clearButton:hover {
+				background-color: #444;
+			}
+
+			#recSelection {
+				opacity: 
+					0.0;
+				padding-left: 
+					5%;
+				padding-right: 
+					5%;
+				max-height: 
+					0;
+				height: auto;
+				transition: min-height 0.67s ease-in-out, max-height 0.67s ease-in-out, opacity 0.67s ease-in-out;
+			}
+			#recTranscript {
+				max-width: 
+					800px;
+				max-height:
+					25vh;
+				overflow: 
+					auto;
+				padding: 
+					10px;
+				margin:
+					10px;
+			}
+			#buttonDiv {
+				background-color: lightgray;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				padding: 2px;
+			}
+			#filterDiv {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			input[type="button"] {
+				background: #ddd;
+				color: black;
+				border: none;
+				text-decoration: none;
+				width: auto;
+				font-size: 
+					0.75em;
+				padding: 8px;
+				margin: 2px;
+				border-radius: 5px;
+			}
+			input[type="button"]:hover {
+				background: #eee;
+				cursor: pointer;
+			}
+			input[type="button"]:checked {
+				background: blue !important;
+			}
+			input.checked {
+				background: black !important;
+				color: white !important;
+			}
+			@media Screen and (orientation: Landscape) and (min-width: 1000px){
+				#outerContainer{
+					display: grid;
+					grid-template-columns: 40% 60%;
+				}
+				#top-left{
+					grid-column: 1 / 2;
+					margin: 0 2vh 0 2vh;
+					max-height: 90vh;
+					overflow: auto;
+				}
+				#bottom-right {
+					grid-column: 2 / 3;
+					max-height: 90vh;
+					overflow: auto;
+					margin: 0 2vh 0 2vh;
+				}
+			}
+			@media Screen and (orientation: Portrait) {
+				#outerContainer{
+					display: grid;
+					max-height: 90%;
+					grid-template-rows: 40% 60%;
+				}
+				#top-left{
+					grid-row: 1 / 2;
+					overflow: auto;
+				}
+				#bottom-right{
+					grid-row: 2 / 3;
+					overflow: auto;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>FEAR</h1>
+		<div id="outerContainer">
+			<div id="top-left">
+				<div id="recSelection">
+					<h2 id="recTitle"></h2>
+					<div id='recTranscript'></div>
+					<audio controls id="recPlayer" style="display: none"></audio>
+				</div>
+				<div id="keyword">
+					<h4>Keyword search: </h4>
+					<input oninput="searchFiles()" onsubmit="this.blur()" id="search" type="text">
+				</div>
+				<h3>Common categories</h3>
+				<div id="filterDiv">
+				</div>
+				<button onclick="clearCategories()" id="clearButton">Clear</button>
+
+			</div>
+			<div id="bottom-right">
+				<h3 id="instruction">Select from the recordings below</h3>
+				<div id='buttonDiv'>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>

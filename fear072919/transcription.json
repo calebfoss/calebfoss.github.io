@@ -1,0 +1,2298 @@
+const recordings = [
+    {
+      "file": "HIV_&_love.wav",
+      "title": "HIV & love",
+      "text": "I've always gotten myself tested regularly for sexually transmitted infections and also believe firmly in in practice safe sex. But still nothing is ever a hundred percent, and you can never be totally certain. And so I think the thought that scares me most is that I could contract HIV and then before I could physically find out about it, and even if I was practicing safe sex with someone I was falling in love with or that I have fallen in love with, that I could then pass it on to them so that the physical expression of my love for someone would become a deadly toxin to that person. I think it would combine the most intense feelings of sorrow that I could experience with is the most intense feelings of culpability that I could experience, and I think that that combination of emotions would be so crushing and devastating that I could never experience joy after that.",
+      "categories": [
+        "Emotions/Relationships",
+        "Illness/Disability",
+        "Sex"
+      ]
+    },
+    {
+      "file": "accidentally_falling.wav",
+      "title": "accidentally falling",
+      "text": "I'm most afraid of accidentally falling in front of a lot of people.",
+      "categories": [
+        "Accidents",
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "afraid_of_being_afraid.wav",
+      "title": "afraid of being afraid",
+      "text": "I'm afraid of being afraid.",
+      "categories": [
+        "Fear Itself"
+      ]
+    },
+    {
+      "file": "aging.wav",
+      "title": "aging",
+      "text": "Aging",
+      "categories": [
+        "Old Age"
+      ]
+    },
+    {
+      "file": "aids,_no_bars,_not_clever.wav",
+      "title": "aids, no bars, not clever",
+      "text": "I'm afraid my answers won't be clever enough. I'm afraid that I should've hung up because I cannot think of what I'm afraid of right now. I'm afraid of, of having the AIDs, and having to tell my parents, and costing a lot of money and not having health insurance. I'm afraid that Lizzie won't be able to get into the bar tonight because she's not actually twenty one. I'm afraid that men will be lurking outside my house and tried to steal from me and I won't be able to run fast enough cause I'm wearing heels. I'm afraid that nobody loves me and that all my friends use me for my ability to... talk a lot. Okay, you know that then. That's all. Thanks.",
+      "categories": [
+        "Emotions/Relationships",
+        "Illness/Disability",
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "all_music_will_sound_like....wav",
+      "title": "all music will sound like...",
+      "text": "...that sometime in the near future all music is going to end up sounding like the Pretty Lights or Deadmau5 or Bassnectar.",
+      "categories": []
+    },
+    {
+      "file": "amnesia.wav",
+      "title": "amnesia",
+      "text": "Hi my name is Kurt. I'm afraid of sustaining a blow to the head and suffering from amnesia. That's the big one. Bye bye.",
+      "categories": [
+        "Accidents",
+        "Illness/Disability"
+      ]
+    },
+    {
+      "file": "anal_rape.wav",
+      "title": "anal rape",
+      "text": "Anal raping",
+      "categories": [
+        "Being Attacked"
+      ]
+    },
+    {
+      "file": "angel_dust_animal_tranq.mp3",
+      "title": "angel dust animal tranq.mp3",
+      "text": "Angel dust, animal tranq, animal tranquilizer, aurora borealis, belladona, black dust, black wack, boat, butt naked, fake cannabinol, sigurad, CJ, cliffhanger, Colombo, cosmos, crazy coke, crystal, crystal t, cycline, cyclones, Detroit, pink, devil dust, dippa, donk, drink, dummy dust, elephant, elephant tranquilizer, embalming fluid, energizer, earthquakes, fresh fried steaks, fuel, goon dust, guerrilla tabs, green leaves, green tea, happy sticks, HCP, heaven and hell, ... hinkley hog, horse tranquilizer, ill, Elise, Ellie momo, jet fuel, Jim Jones, juice, k blast, cabs, killer, killer weed, KJ, cools, KW, leak, leak Ebola, leaky league, nanos, lethal weapons, little ones, live ones, lovelies, love, love boat, mad dog, magic, magic dust, mean green mint leaf, mint weed, missile base, monkey dust, monkey tranquilizer, ... OPP, octane, ozone, P-Funk, parachute, ... PCP, ... Picachu, ... rickity roll, rocket fuel ... stardust, ... tic tak, tragic magic, wack ... wolf, worm, yellow fever, zombie ... Here we go when I was six years old a grown man with no clothes on ran up the streets chased by police in front of my house him about. Where's my fucking bicycle? Give me my fucking bicycle. He ain't have no bicycle. Years later on 10th and P northwest DC a black girl named Bony jacked up on PC and meth starving to death ate both her children, one nine, one four. She ate the youngin first. One time she ... ain't both of y'all sucking on my pussy. And I was alone. Bathtub PCP in the kitchen. ...told twenty five stories to fifty people out that same summer, party at ten, smoke... hold onto a pole over forty five minutes in the basement. Footsteps on a... what's going on... jumping on the bed... he's all fucked up and bleeding, leaving teeth marks in the ceiling... Rodney King was dusted... every semi truck going on the interstate is the exact same semi truck... doing 10 in a 70... and when that happens you're fucked because there's' no angels on angel dust.",
+      "categories": [
+        "Detailed/Specific"
+      ]
+    },
+    {
+      "file": "anonymous800numbers_1-2.wav",
+      "title": "anonymous800numbers 1-2",
+      "text": "I'm afraid of anonymous eight hundred numbers.",
+      "categories": [
+        "This Project"
+      ]
+    },
+    {
+      "file": "arab_firm_purchasing_seaport.wav",
+      "title": "arab firm purchasing seaport",
+      "text": "First question: do you feel an Aran firm should be allowed to purchase six major seaports? Press one for yes, two for no three, for undecided.",
+      "categories": []
+    },
+    {
+      "file": "art_like_cheerleading_pompom.wav",
+      "title": "art like cheerleading pompom",
+      "text": "I'm really afraid that my artwork like a cheerleading pom-pom. ",
+      "categories": []
+    },
+    {
+      "file": "asphixiation,_gas_attacks.wav",
+      "title": "asphixiation, gas attacks",
+      "text": "I'm most afraid of asphyxiation. Gas attacks. Just sort of. I don't know. It might have come from the gas chamber from Nazi Germany. I'm not entirely sure. Anyway that's my greatest fear. I have dreams about it. Like this one dream where I just walked to my school, middle school I'm floating on top of this...",
+      "categories": [
+        "Drowning/Suffocation"
+      ]
+    },
+    {
+      "file": "attacked_when_alone_w-_hook.wav",
+      "title": "attacked when alone",
+      "text": "I would say I'm probably most afraid of being attacked when I'm by myself in a room like the one I'm sitting in. I'm sitting at a desk and I'm looking at a closet behind me. The room's dark and cold so I imagine that this might have been set up with someone ready to jump out of the closet at me. It's basic. tThe idea of walking down a dark alley and having someone popped out at you. My greatest fear is someone who has a hook for a hand they're actually attacking me with the hook.",
+      "categories": [
+        "Being Attacked"
+      ]
+    },
+    {
+      "file": "babies_1-2.wav",
+      "title": "babies",
+      "text": "little babies",
+      "categories": [
+        "People"
+      ]
+    },
+    {
+      "file": "background_radio.wav",
+      "title": "background radio",
+      "text": "*music*",
+      "categories": []
+    },
+    {
+      "file": "bats_1-2.wav",
+      "title": "bats",
+      "text": "Bats. Bats scare me. They're big and they're nasty and they're scary. I hate bats.",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "bears.wav",
+      "title": "bears",
+      "text": "bears",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "become_homeless.wav",
+      "title": "become homeless",
+      "text": "My biggest fear is to become destitute. To become homeless and spend my final days alone.",
+      "categories": [
+        "Homelessness",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "becoming_really_depressed.wav",
+      "title": "becoming really depressed",
+      "text": "becoming really depressed ",
+      "categories": [
+        "Emotions/Relationships",
+        "Illness/Disability"
+      ]
+    },
+    {
+      "file": "being_afraid,_bored,_unfulfilled.wav",
+      "title": "being afraid, bored, unfulfilled",
+      "text": "So I think I'm afraid of being afraid or so afraid of is that I don't know what it even is that I'm afraid of. And I would tell anybody I'm not afraid of anything, but that's just not true. If I look a little more I think I'm maybe afraid of being bored or being alone or not finding so really fulfilling loving deep relationship but thanks for having me think about fear.",
+      "categories": [
+        "Emotions/Relationships",
+        "Fear Itself",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "being_afraid.wav",
+      "title": "being afraid",
+      "text": "I'm really afraid of being afraid. Thanks for the opportunity to share that. Very cool.",
+      "categories": [
+        "Fear Itself"
+      ]
+    },
+    {
+      "file": "being_alone,_unable_to_have_baby.wav",
+      "title": "being alone, unable to have baby",
+      "text": "I guess like a lot of people my greatest fear is being alone. I consider myself really lucky to have found a wonderful partner to share my life with, and we're not able to have a baby. And I wonder if he goes before me what it will like what it would be like living without him. That's probably my greatest fear.",
+      "categories": [
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "being_alone.wav",
+      "title": "being alone",
+      "text": "I'm afraid of being alone.",
+      "categories": [
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "being_alone_2.wav",
+      "title": "being alone 2",
+      "text": "I am afraid of being alone.",
+      "categories": [
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "being_forgotten.wav",
+      "title": "being forgotten",
+      "text": "I'm most afraid of being forgotten.",
+      "categories": [
+        "Forgotten"
+      ]
+    },
+    {
+      "file": "being_myself_being_watched_losing_father.wav",
+      "title": "being myself being watched losing father",
+      "text": "hi I am my name is Embry and uh um I I am I am from India and I ... I I ... I think I'm scared of many things but um most mostly I'm scared of maybe um being myself I have this fear or this feeling that is like fear that I am being watched that people are watching me and even when there's no one watching me I feel I'm being watched and it produces a very strange um kind of stage fright in me and um I I sometimes it's not that I feel it all the time sometimes I feel that I I am not scared or fearful of anything I just feel I can get on top of everything and I am here I am for the first time in America and I'm studying film at Temple University and um sometimes people look at me and one day I was trying I thought um America is the I don't know what ideas I had when I was in India when I came here and one day I was standing not standing I was rushing towards to get into the into the department because I was getting made for class and there's this one professor who it was stepping outside the main door and because the door is security guard it that's why you have to run your identity card in it um I just rushed to that I did he had already opened the door and I did not want to do it so he looked at me and he held the door for a while and he looked at me and he said that I look like a terrorist and I don't know what that meant because it just completely shocked me and um I I wasn't I'm a woman you know there's no I don't even know if I have the language to express what I felt then it was not fear but it was something like fear maybe and so I'm scared of losing my father I constantly have these um this feeling that something bad is going to happen to him, and he is the only person in my family who is who was who has not taken to traditional conservative Islam Islamic practices I don't mean to say traditional and conservative in a bad way maybe a part of me is conservative and traditional, but I feel that he is one person and his um this feeling that I will lose him I feel I will lose a part of my um rational open freewheeling world I'm scared off telling my mother that I have a double life and um I think I'll call back on this help and this phone line again because um just like that. Bye.",
+      "categories": [
+        "Family",
+        "People",
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "being_raped_again.wav",
+      "title": "being raped again",
+      "text": "hi I'm most afraid of being raped again ",
+      "categories": [
+        "Being Attacked"
+      ]
+    },
+    {
+      "file": "being_sober.wav",
+      "title": "being sober",
+      "text": "I'm afraid of being sober ",
+      "categories": []
+    },
+    {
+      "file": "being_w-o_air.wav",
+      "title": "being w-o air",
+      "text": "die from the water um being without air or something like that. It's horrible.",
+      "categories": [
+        "Drowning/Suffocation"
+      ]
+    },
+    {
+      "file": "being_wrong_that_there_is_a_god.wav",
+      "title": "being wrong that there is a god",
+      "text": "I'm most afraid of being wrong that there is a god ",
+      "categories": [
+        "Spiritual"
+      ]
+    },
+    {
+      "file": "bitten,_death,_acceptance.wav",
+      "title": "bitten, death, acceptance",
+      "text": "it's hard to just pick one thing to be afraid of being afraid of being bitten by a wild animal or even a rabid dog is something that I've figured since childhood although I have grown to become very close with all different types of animals. And fear being ready for the hereafter but my faith and god is what dissolves that fear. My faith in Christ in his death and burial and resurrection his blood wipes away the fear. Fear of people not accepting me because I have so much to give and because I felt much appreciation being afraid of the one or two in the minority hopefully in the minority that are unaccepting is another fear but once again all these fears are wiped away when I think about the greatness of god in my life.",
+      "categories": [
+        "Animals",
+        "Death",
+        "Spiritual"
+      ]
+    },
+    {
+      "file": "blahblahblah_1-2.wav",
+      "title": "blahblahblah 1-2",
+      "text": "blah blah blah",
+      "categories": []
+    },
+    {
+      "file": "boys_growing_up,_gold_digging_women.wav",
+      "title": "boys growing up, gold digging women",
+      "text": "hi um I'm afraid of a couple of things um in the future basically my uh well the the my boys who uh have seen way too much already growing up and uh the second thing I'm kind of fearful of is women just looking at men as a dollar sign and uh not much more than that so we talk about willing to do anything I'll tell you. Anyway those are my two fears for the minute and uh you have a great day. God bless.",
+      "categories": [
+        "Family",
+        "People"
+      ]
+    },
+    {
+      "file": "broken_down_on_hwy.wav",
+      "title": "broken down on hwy",
+      "text": "I'm afraid to be broken down by the side of the road but if you can hear the trucks you can tell that I am broken down by the side of the road on a highway single lane with trucks passing me by hopefully the tow truck will come soon but it's pretty damn scary.",
+      "categories": [
+        "Accidents"
+      ]
+    },
+    {
+      "file": "brother_doesn't_want_me_in_his_life.wav",
+      "title": "brother doesn't want me in his life",
+      "text": "Hi. Um. What I'm most afraid of is that the brother that I didn't grow up with to grow up in another country doesn't want me in his life now that we're old enough to finally co exist. Yeah that's what I'm most afraid of.",
+      "categories": [
+        "Family"
+      ]
+    },
+    {
+      "file": "bunnies.wav",
+      "title": "bunnies",
+      "text": "bunnies",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "cable_entanglement.wav",
+      "title": "cable entanglement",
+      "text": "It's not really about being alone but it's being with with a cable and the cable the simple cable is somehow or another I get entangled in two it wraps around me I lose control of it it's such a simple thing and yet it's just engulfs me and then the next thing I know is thrust into a trip and a fall in a loss of control and I can't get out of the confines of the cable it's wrapped around my leg or my arms or maybe even my neck simplest thing it just happens and every time I see a long cable an extension cord I'm always thinking is that the time that I get tangled up in it and accidentally trip I don't even think about the fact it is just a little bit closer to to my neck or to my feet where I might trip over it or if there's an open spot in the insulation and then that's when course it all just begins to go for pouring through my veins all the current right from the source threw me into ground. Yeah cables cables that's what it is.",
+      "categories": [
+        "Accidents",
+        "Drowning/Suffocation"
+      ]
+    },
+    {
+      "file": "call_wouldn't_connect.wav",
+      "title": "call wouldn't connect",
+      "text": "My greatest fear is that this call would not connect and I would be unable to leave this message. ",
+      "categories": [
+        "This Project"
+      ]
+    },
+    {
+      "file": "canadian_becoming_like_US.wav",
+      "title": "canadian becoming like US",
+      "text": "As a Canadian I'm most afraid of becoming like the United States. ",
+      "categories": [
+        "Places"
+      ]
+    },
+    {
+      "file": "cancer,_not_able_to_have_children.wav",
+      "title": "cancer, not able to have children",
+      "text": "I am most afraid of cancer I was diagnosed with borderline cancer and I'm calling it faux-cancer because it's not cancer but it's not not cancer so I am afraid that and I have it in my ovaries so I'm afraid of losing my ability to have children. Haven't had any yet. All set. Thanks.",
+      "categories": [
+        "Illness/Disability"
+      ]
+    },
+    {
+      "file": "cars,_death_calls.wav",
+      "title": "cars, death calls",
+      "text": "Are you going to leave a message? Are you going to leave a message? No. Why aren't you going to leave a message? Why? Why don't you? I don't know what I'm afraid of. I don't know what I'm most afraid of either. I don't know what I'm most afraid of either. It's recording. Well say something. There's nothing to say. What is the thing you're most afraid of? What terrifies you? Um it's hard for me to think. My body ripped apart in a car crash. Yeah I mean it's kind of sucky sounding. Yeah cars. Cars are pretty scary they're just flying everywhere. Yeah. At eighty miles per hour in all these different directions. And... it is something... it's bigger in the components I suppose. Anyway so the idea is what's the thing that you are most afraid of. So what else? Hm... Technology? Some people are afraid of technology but that's not the most frightening thing, is it? Losing family is very frightening extremely frightening my grandmother passing away extremely frightening your parents losing parents your your... like getting that phone call like oh my god like mom died (oh my god) like like that's so terrifying that's happened to us before like Priscilla ran in she told everyone grandpa's dead... my mom started breaking down in a McDonald's that her father had passed away yeah it was a McDonald's in a hospital which is weird that there are McDonald's in hospitals. It's gonna send a mixed message. ",
+      "categories": [
+        "Accidents",
+        "Death",
+        "Family"
+      ]
+    },
+    {
+      "file": "chewedgum_1-2.wav",
+      "title": "chewedgum 1-2",
+      "text": "One of the things that has really bothered me and not a lot a lot of people really understand it really kind of bothers me but that's not what I'm afraid of per se but one thing that's always just been kind of like and it's not even fear so much as it disturbs me it's chewed gum. In all honesty I am disturbed by chewed gum and what makes matters worse about being disturbed by it is that when I was younger and I'd have my friends over and like I don't know I'd like fall asleep or something a sleepover and I'd wake up and they put gum on me and it just would it even made matters worse because then it just made me feel more spite for chewed gum and it's not gum as a whole it's gum as like this regurgitated mass of sticky saliva that's in someone's mouth and just regurgitated upon and then spit out even devoured it's just it just disgusts me ",
+      "categories": [
+        "Detailed/Specific"
+      ]
+    },
+    {
+      "file": "chickens.wav",
+      "title": "chickens",
+      "text": "I am terrified of chickens to the point where I um it feels like my heart stops and I can't move and kind of tremble shaking like crazy and yeah terrified of chickens.",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "children_being_expoited.wav",
+      "title": "children being expoited",
+      "text": "My children getting around someone that uh exploits them and there's nothing they can do about it and I'm not there to help.",
+      "categories": [
+        "Family"
+      ]
+    },
+    {
+      "file": "children_being_stolen.wav",
+      "title": "children being stolen",
+      "text": "My biggest fear is somebody stealing my children pretending like it didn't happen.",
+      "categories": [
+        "Family"
+      ]
+    },
+    {
+      "file": "chiuauas.wav",
+      "title": "chihuahuas",
+      "text": "chihuahuas",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "closet_behind_me.wav",
+      "title": "closet behind me",
+      "text": "Right now I'm afraid of the closet behind me with a light on because I think somebody's going to come out and scare the shit out of me.",
+      "categories": [
+        "Being Attacked"
+      ]
+    },
+    {
+      "file": "clowns_gnomes.wav",
+      "title": "clowns gnomes",
+      "text": "I'm most afraid of clowns and little trolls and little gnomes.",
+      "categories": [
+        "Magical Fictional"
+      ]
+    },
+    {
+      "file": "cockroaches.wav",
+      "title": "cockroaches",
+      "text": "cockroaches",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "cockroaches_1-2.wav",
+      "title": "cockroaches 1-2",
+      "text": "cockroaches ",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "coffee_-_too_much.wav",
+      "title": "coffee - too much",
+      "text": "What I fear most is that feeling after you drank a lot of coffee and you had a sunny day and you're you're feeling you're feeling great and you're feeling invincible but inevitably all the the to the little chemical left that you've been coasting on just all the sudden plummets out and you're left dark alone and tired but still with that a sharp mind gnawing away and sometimes it feels like death and sometimes it just feels incredibly lonely and I'm very afraid of being there. Thanks bye.",
+      "categories": [
+        "Detailed/Specific",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "commitment.wav",
+      "title": "commitment",
+      "text": "commitment ",
+      "categories": [
+        "Emotions/Relationships",
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "crazy_processed_voice.wav",
+      "title": "crazy processed voice",
+      "text": "... ... ... ... ... ... ... ... ... ",
+      "categories": []
+    },
+    {
+      "file": "creative_block.wav",
+      "title": "creative block",
+      "text": "I'm most fearful of not getting past that barrier of a uh of a creative block you know I have this moments I feel like it's going to break through and then it never happens so I feel like that's my greatest fear not getting past that mark. Always kind of stopping right in front of it.",
+      "categories": [
+        "Psychological"
+      ]
+    },
+    {
+      "file": "creepy_crawly_bugs.wav",
+      "title": "creepy crawly bugs",
+      "text": "Hello. I'm most afraid of creepy crawly bugs and insects crawling all over my body with tons of little legs and tons of little eyes. It freaks me out. ",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "deadly_car_wrecks.wav",
+      "title": "deadly car wrecks",
+      "text": "deadly car wrecks ",
+      "categories": [
+        "Accidents"
+      ]
+    },
+    {
+      "file": "death,_not_finishing.wav",
+      "title": "death, not finishing",
+      "text": "Well I'm not really sure I'm terrified of something specifically um... probably dead would be the the worst thing of being not necessarily how I'm gonna die but just not finishing things that I would that I would like to do um but um as far as spiders or darkness or anything I'm I'm not I'm not really sure I can say I'm scared of that.",
+      "categories": [
+        "Death"
+      ]
+    },
+    {
+      "file": "death.wav",
+      "title": "death",
+      "text": "my biggest fear is death",
+      "categories": [
+        "Death"
+      ]
+    },
+    {
+      "file": "death_1-2.wav",
+      "title": "death 1-2",
+      "text": "death",
+      "categories": [
+        "Death"
+      ]
+    },
+    {
+      "file": "death_2.wav",
+      "title": "death 2",
+      "text": "death",
+      "categories": [
+        "Death"
+      ]
+    },
+    {
+      "file": "death_3.wav",
+      "title": "death 3",
+      "text": "death",
+      "categories": [
+        "Death"
+      ]
+    },
+    {
+      "file": "death_4.wav",
+      "title": "death 4",
+      "text": "death",
+      "categories": [
+        "Death"
+      ]
+    },
+    {
+      "file": "defaultingloans_1-2.wav",
+      "title": "defaulting on loans 1-2",
+      "text": "defaulting on my loans",
+      "categories": [
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "diabetic_wrong_number.wav",
+      "title": "diabetic wrong number",
+      "text": "Oh I was calling for diabetic. It's not what I'm afraid of I'm sorry. I have the wrong number.",
+      "categories": []
+    },
+    {
+      "file": "dirty_toilets,_bad_plumbing.wav",
+      "title": "dirty toilets, bad plumbing",
+      "text": "dirty toilets and bad plumbing",
+      "categories": []
+    },
+    {
+      "file": "divorce,_cutting_ties.wav",
+      "title": "divorce, cutting ties",
+      "text": "I don't know if I'm doing this right but um I think what I think what I fear the most I didn't realize I feared it until it happened to me um so uh I just got divorced um I'm twenty seven and my partner we've been together since I was seventeen. Um so going on ten years not quite ten and we've been married for five going on five not quite five we were high school sweethearts we went through college together and she's a writer she's a poet actually and she's going to a very prestigious school and I quit my job at an art museum to move with her because that was part of our plan and so then we um went there and it was great and until... it wasn't and then she started distancing yourself from me and we tried to talk and then she kind of kept everything quiet um we din't really deal with it she didn't want to deal with it and she kind of kept it quiet and to herself just to maintain uh like our normal state without dealing with what was actually going on until she had reached a point that she just come to a conclusion and I had no say so... and now we're officially divorced and I moved across the country to another place and I'm starting over and she's still in school. Um but I was having a really hard time dealing with it because it was someone that I you know... thought that I was going to have the rest of my you know spend the rest of my life with but a friend of mine told me I was in a kind of cut ties because she still wanted to be friends and that was the only way I can make or lose anything would be if I cut ties entirely because we're still you know we still get along but she only wanted friendship she didn't want the rest that goes along with it so um so the only thing I could do to make her lose something would be to no longer be her friend and I was afraid to take that step to cut ties and a friend of mine said that thing you're afraid of is already happening to  you. You fear cutting off ties and then she'll move farther away from you emotionally and everything he's like you're afraid of what's already happening to you. It's like being afraid of a shark attack while the sharks already eaten half your body. Um which it's true and the more I thought about it the more it made sense. Um... so I guess that's the thing I was most afraid of and I got this and I'm still still around so um yeah. I guess that's what I was most afraid of.",
+      "categories": [
+        "Emotions/Relationships"
+      ]
+    },
+    {
+      "file": "divorce_and_true_love.wav",
+      "title": "divorce and true love",
+      "text": "I'm afraid of getting divorced or getting in a situation where I think I need to get divorced I think I'm in love but it's like wait it's not real and like is there any such thing as true love it's just some kind of idealistic dream that reaching for? Should I keep looking? Or should I just bank on what I have and try to take it all away even if I'm not a hundred percent sure about it.Guess I'm afraid of true love.",
+      "categories": [
+        "Emotions/Relationships"
+      ]
+    },
+    {
+      "file": "dog_will_disturb_sleep.wav",
+      "title": "dog will disturb sleep",
+      "text": "Hello. At the moment the thing I'm most afraid of is my dog waking up in the middle of the night wanting to engage in some activity be it me letting him out or where he just licks himself. To sum up I'm afraid that my dog is going to disturb my sleep. Thank you very much.",
+      "categories": [
+        "Animals",
+        "Sleep"
+      ]
+    },
+    {
+      "file": "don't_love_gfriends_enough.wav",
+      "title": "don't love girlfriend enough",
+      "text": "I'm afraid I don't love my girlfriend enough.",
+      "categories": [
+        "Emotions/Relationships"
+      ]
+    },
+    {
+      "file": "downward_spiral_of_society.wav",
+      "title": "downward spiral of society",
+      "text": "I'm afraid of the downward spiral of society mired in its own self aggrandizement especially in this country with pride, arrogance, and stupidity leading the way in our government.",
+      "categories": []
+    },
+    {
+      "file": "driving.wav",
+      "title": "driving",
+      "text": "I am very afraid of driving. It's a problem.",
+      "categories": []
+    },
+    {
+      "file": "drowning_in_ocean.wav",
+      "title": "drowning in ocean",
+      "text": "Uh when I was... I think eleven I was on a boy scout trip uh to the beach and I almost a guy got hit by a wave in almost pulled out to sea and so I I do uh I do have a fear of drowning um in the ocean it doesn't but I don't worry about it fresh water but for some reason in the ocean and very very afraid of of that and I sometimes wonder if it's just going to happen one way or the other if it's uh my destiny to drown in the ocean someday from a plane crash or a boat crash or an accident some kind.",
+      "categories": [
+        "Accidents",
+        "Drowning/Suffocation"
+      ]
+    },
+    {
+      "file": "dying.wav",
+      "title": "dying",
+      "text": "Dying. Death. ",
+      "categories": [
+        "Death"
+      ]
+    },
+    {
+      "file": "dying_2.wav",
+      "title": "dying 2",
+      "text": "I'm most afraid of dying.",
+      "categories": [
+        "Death"
+      ]
+    },
+    {
+      "file": "dying_alone,_not_being_loved.wav",
+      "title": "dying alone, not being loved",
+      "text": "My biggest fear is dying alone and not being loved by anyone. ",
+      "categories": [
+        "Death",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "dying_alone_+_10_cats.wav",
+      "title": "dying alone with 10 cats",
+      "text": "I'm afraid of dying alone with ten cats.",
+      "categories": [
+        "Animals",
+        "Death",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "dying_before_reaching_goals.wav",
+      "title": "dying before reaching goals",
+      "text": "I'm afraid of dying before I reach my own personal goals.",
+      "categories": [
+        "Death",
+        "Missing Out"
+      ]
+    },
+    {
+      "file": "dying_traumatically,_never_being_in_love.wav",
+      "title": "dying traumatically, never being in love",
+      "text": "I'm afraid of dying in some traumatic event that I won't so my parents or my family won't be able to explain why I was there. Something totally unordinary something that just doesn't make sense something too violent and I'm afraid of dying along and and never being in love.",
+      "categories": [
+        "Being Attacked",
+        "Death",
+        "Emotions/Relationships",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "embracing_ignorance.wav",
+      "title": "embracing ignorance",
+      "text": "People people embracing their their ignorance and embracing their ignorance of themselves.",
+      "categories": [
+        "People",
+        "Psychological"
+      ]
+    },
+    {
+      "file": "ending_up_highschool_art_teacher_in_gary.wav",
+      "title": "ending up highschool art teacher in gary",
+      "text": "I'm afraid of ending up a high school art teacher in Gary, Indiana.",
+      "categories": [
+        "Places",
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "entropy_1-2.wav",
+      "title": "entropy 1-2",
+      "text": "entropy",
+      "categories": [
+        "The Unknown"
+      ]
+    },
+    {
+      "file": "everything_forgetting_about_me.wav",
+      "title": "everything forgetting about me",
+      "text": "I'm afraid of everything forgetting about me. I'm afraid of everyone dying and I'm reminded of this when I... think that I want everyone to die.",
+      "categories": [
+        "Death",
+        "Forgotten",
+        "People"
+      ]
+    },
+    {
+      "file": "evil_1-2.wav",
+      "title": "evil 1-2",
+      "text": "evil",
+      "categories": [
+        "Spiritual"
+      ]
+    },
+    {
+      "file": "explosive_diarrhea,_theft.wav",
+      "title": "explosive diarrhea, theft",
+      "text": "Hello, Fear. At the top of my head I have to say the thing that I am somewhat fearful of is probably explosive diarrhea in a very public setting where I don't have uh any control to uh something bad or some clean clothes I mean there's a lot of other things that scare me. My house got broken into I know I feel panicked but I guess off the top of my head terrible diarrhea is something that's not good or maybe one of those deadly diseases from Africa.",
+      "categories": [
+        "Illness/Disability",
+        "Places"
+      ]
+    },
+    {
+      "file": "failing_life.wav",
+      "title": "failing life",
+      "text": "I'm afraid of uh failing life.",
+      "categories": [
+        "Failure"
+      ]
+    },
+    {
+      "file": "failure,_life_w-o_child.wav",
+      "title": "failure, life without child, death",
+      "text": "Fear of failure, fear of life without my child, fear of becoming unknown, fear of death.",
+      "categories": [
+        "Death",
+        "Failure",
+        "Family",
+        "Forgotten"
+      ]
+    },
+    {
+      "file": "failure,_post_corporate_ladder.wav",
+      "title": "failure, post corporate ladder",
+      "text": "I have a fear of failure. I've been very successful in my entire life and uh about nine months ago I jumped off the corporate um ladder and went freewheeling to do the things that I love and it's really scary because I don't know from day to day where's the incomes coming from but at the same time it's exhilarating and I'm happy uh but the fear is just that the happiness will um... will come... will be blown apart because I can't survive in a world that is driven by money and upward mobility. That's my fear.",
+      "categories": [
+        "Failure"
+      ]
+    },
+    {
+      "file": "failure,_risk.wav",
+      "title": "failure, risk",
+      "text": "I am most afraid of failure of the inability to take risk because I'm afraid that I won't be able to deliver so I'm afraid of being in a safe space at all times and missing opportunity because of fear of risk.",
+      "categories": [
+        "Failure",
+        "Missing Out"
+      ]
+    },
+    {
+      "file": "failure.wav",
+      "title": "failure",
+      "text": "I'm afraid of failure. I'm afraid that like if I try too hard then I can't do it and if I don't try hard enough I won't be able to do it either and you know like I want to go on to college or like that but I'm afraid to fail.",
+      "categories": [
+        "Failure"
+      ]
+    },
+    {
+      "file": "failure2_1-2.wav",
+      "title": "failure2 1-2",
+      "text": "failure",
+      "categories": [
+        "Failure"
+      ]
+    },
+    {
+      "file": "failure3_1-2.wav",
+      "title": "failure3 1-2",
+      "text": "failure ",
+      "categories": [
+        "Failure"
+      ]
+    },
+    {
+      "file": "failure_1-2.wav",
+      "title": "failure 1-2",
+      "text": "failure",
+      "categories": [
+        "Failure"
+      ]
+    },
+    {
+      "file": "failure_2.wav",
+      "title": "failure 2",
+      "text": "failure ",
+      "categories": [
+        "Failure"
+      ]
+    },
+    {
+      "file": "failure_3.wav",
+      "title": "failure 3",
+      "text": "failure",
+      "categories": [
+        "Failure"
+      ]
+    },
+    {
+      "file": "falling.wav",
+      "title": "falling",
+      "text": "So I think I'm most afraid of falling. It's really weird I have a feeling that I might have died in a past life from a fall and I don't know if it was like a physical fall like from a mountain or an airplane or maybe even from a bed or if it was the falling sensation that was like psychological where like I was just falling from my own consciousness. I don't know but I just have this utter fear of falling so like if I'm ever walking on a mountain, a hilltop, even a sidewalk or even like watching a movie and there's like a sensation of like going over the edge with like some mind blowing thought I don't know I get this fear that like I could just fall flat on my face or like fall over a crevice or like a hill or a top it's really strange so you could say my fear is of heights or yeah simply a falling and and losing control maybe that's what it is. It's the fear of just not knowing if I have control over my body and my mind um so yeah I think fear of falling is definitely my biggest fear.",
+      "categories": [
+        "Gravity",
+        "Heights",
+        "Psychological"
+      ]
+    },
+    {
+      "file": "falling_in_love.wav",
+      "title": "falling in love",
+      "text": "This may sound weird but I have a fear of falling in love it just terrifies me because love hurts. Thank you. ",
+      "categories": [
+        "Emotions/Relationships"
+      ]
+    },
+    {
+      "file": "falling_off_cliff.wav",
+      "title": "falling off cliff",
+      "text": "I'm most afraid of falling off a cliff.",
+      "categories": [
+        "Accidents",
+        "Gravity"
+      ]
+    },
+    {
+      "file": "falling_through_bridge_void.wav",
+      "title": "falling through bridge void",
+      "text": "Um my biggest fear I think stems from the early recurring dream where I climbed a bridge an insanely high bridge which dematerialized at the top and to just mostly voids that I eventually fell through and no one was there to help me. I know it doesn't exist but that's the scariest thing to me.",
+      "categories": [
+        "Gravity",
+        "Heights",
+        "Magical Fictional"
+      ]
+    },
+    {
+      "file": "fax_sounds.wav",
+      "title": "fax sounds",
+      "text": "",
+      "categories": []
+    },
+    {
+      "file": "fcc_sex_reassignment_automated.wav",
+      "title": "fcc sex reassignment automated",
+      "text": "...the data from death and cyber attacks for more information visit fcc.gov that's www.fcc.gov. Medicare no longer exclude sex reassignment surgery from coverage. The exclusion was no longer reasonable because the surgery is safe and effective and can no longer be considered experimental. The decision reverses a Medicare policy in place since 1981 it comes as a small but growing number of university health plans in large companies have started covering gender transition services and could lead to further changes since many health plans follow Medicare as lead on coverage. For more information go to hhs.gov that's www.hhs.gov. America's immigration system is broken too many employers game the system by hiring undocumented workers and there are eleven million people living in the shadows. The president wants to build a smart effective immigration system that continues efforts to secure our borders and cracks down on employers who hire undocumented immigrants. For more information visit whitehouse.gov that's www.whitehouse.gov. Equal pay is a family issue. Women make up nearly half of the US labor force in our growing number of breadwinners and their families but despite passage of the equal pay act of 1963 full time women's earnings are only about seventy seven percent of their male counterparts earnings. For more information visit whitehouse.gov that's www.whitehouse.gov.",
+      "categories": []
+    },
+    {
+      "file": "fear_hotline.wav",
+      "title": "fear hotline",
+      "text": "I am afraid of the fear hotline.",
+      "categories": [
+        "This Project"
+      ]
+    },
+    {
+      "file": "fears_getting_in_the_way.wav",
+      "title": "fears getting in the way",
+      "text": "I'm most afraid of letting my own fears get in the way of maybe in the best possible person I can be.",
+      "categories": [
+        "Fear Itself",
+        "Self"
+      ]
+    },
+    {
+      "file": "finding_my_mother.wav",
+      "title": "finding my mother",
+      "text": "finding my mother",
+      "categories": [
+        "Family"
+      ]
+    },
+    {
+      "file": "fireandrats_1-2.wav",
+      "title": "fire and rats 1-2",
+      "text": "I am most afraid of fire and rats. The scene from George Orwell's um book Nineteen Eighty-Four the scene where the rats are in a cage and being going to be placed on a person's face that's frightening. Fire because it's uncontrollable. Fire because it just rages out of control.",
+      "categories": [
+        "Animals",
+        "Nature"
+      ]
+    },
+    {
+      "file": "formsofanimalsconfiningyou_dyingalone_1-2.wav",
+      "title": "swarms of animals confining you dying alone",
+      "text": "I am most afraid of swarms of things like swarms of bees or ants or cats things that swarm around you and confine you and you have no escape. I am also afraid of dying alone.",
+      "categories": [
+        "Animals",
+        "Death",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "found_out_not_as_good_as_thought.wav",
+      "title": "found out not as good as thought",
+      "text": "My biggest fear is that everyone's going to find out I'm not as good as they think I am.",
+      "categories": [
+        "People",
+        "Self"
+      ]
+    },
+    {
+      "file": "free_will.wav",
+      "title": "free will",
+      "text": "Um I suppose my greatest fear is that I will find out that I really do have free will and that all of the times that I been miserable and suffering and terribly unhappy I really did have a choice and do have a choice to not feel that way.",
+      "categories": [
+        "Emotions/Relationships",
+        "Indecision",
+        "Self"
+      ]
+    },
+    {
+      "file": "freezingtodeathindark_1-2.wav",
+      "title": "freezing to death in dark",
+      "text": "I'm most afraid of freezing to death in the dark.",
+      "categories": [
+        "Dark",
+        "Death"
+      ]
+    },
+    {
+      "file": "fundamentalistsbeingright_1-2.wav",
+      "title": "fundamentalists being right",
+      "text": "I am afraid of fundamentalists and worst of all the thought that they just might be right.",
+      "categories": [
+        "People",
+        "Spiritual"
+      ]
+    },
+    {
+      "file": "getting_old.wav",
+      "title": "getting old",
+      "text": "getting old ",
+      "categories": [
+        "Old Age"
+      ]
+    },
+    {
+      "file": "gettings_AIDS,_being_alone,_no_child.wav",
+      "title": "gettings AIDS, being alone, no child",
+      "text": "My greatest fear in life is getting AIDS and uh being alone and not having a child and dying a lonely person of AIDS.",
+      "categories": [
+        "Death",
+        "Illness/Disability",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "gnome_staring.wav",
+      "title": "gnome staring",
+      "text": "Walking in the Ally's room and finding just this gnome staring at me surrounded by Ally's clothes. ",
+      "categories": [
+        "Magical Fictional"
+      ]
+    },
+    {
+      "file": "goats.wav",
+      "title": "dogs",
+      "text": "dogs ",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "going_crazy,_doing_nothing_right....wav",
+      "title": "going crazy, doing nothing right...",
+      "text": "Hello. I fear I'm going crazy right now can't do anything right my mamma's always mad at me. Can't get in a relationship with anybody. Just everything's gone wrong and I'm lost right now. Nothing I do seems right and I'm tired. You know everything personally professionally goes wrong. Well that's about it. Buh-bye.",
+      "categories": [
+        "Emotions/Relationships",
+        "Failure",
+        "Family",
+        "Self"
+      ]
+    },
+    {
+      "file": "gravity_teeth_bashed.wav",
+      "title": "gravity teeth bashed",
+      "text": "Um I'm afraid of uh gravity uh like somehow pushing me forward or some force pushing me forward and hitting my face up against a flat surface or some kind of metallic surface and uh bashing in my teeth. And that's it.",
+      "categories": [
+        "Accidents",
+        "Gravity"
+      ]
+    },
+    {
+      "file": "hangup.wav",
+      "title": "hangup",
+      "text": "",
+      "categories": []
+    },
+    {
+      "file": "hangup2.wav",
+      "title": "hangup 2",
+      "text": "",
+      "categories": []
+    },
+    {
+      "file": "heidi_will_rip_out_eyes.wav",
+      "title": "heidi will rip out eyes",
+      "text": "Daniel's greatest fear is that Heidi will rip out his eyes and feed them to him.",
+      "categories": [
+        "Being Attacked",
+        "Body",
+        "People"
+      ]
+    },
+    {
+      "file": "heights,_falling.wav",
+      "title": "heights, falling",
+      "text": "I am most afraid of heights and falling from heights.",
+      "categories": [
+        "Gravity",
+        "Heights"
+      ]
+    },
+    {
+      "file": "heights.wav",
+      "title": "heights",
+      "text": "I am very very afraid of heights. Bye.",
+      "categories": [
+        "Heights"
+      ]
+    },
+    {
+      "file": "heights_1-2.wav",
+      "title": "heights",
+      "text": "Heights. I'm afraid of heights. I'm scared of heights I've been terrified of heights ever since I can remember. I'm trying to get over my fear. There's nothing I can do to get over it. I need some help. I'm like petrified when I look over banisters and when I'm on the second floor everybody trying to get my attention trying to get me to get over my fear, but I just can't do it.",
+      "categories": [
+        "Heights"
+      ]
+    },
+    {
+      "file": "hi_1-2.wav",
+      "title": "hi",
+      "text": "hi",
+      "categories": []
+    },
+    {
+      "file": "hotlines,_stair_enclosures.wav",
+      "title": "hotlines, stair enclosures",
+      "text": "Hi FEAR hot line. Um let's see right now I'm pretty afraid of uh professing my my fear but I suppose my my biggest fear is going up stairs with enclosures on both sides and a maybe a door at the end that's pretty scary but mostly the enclosure in a narrow stairwell and I usually I always actually not usually but I always have to skip at least one step kind of like an obsessive compulsive thing because then I feel like someone's always going to be chasing me up and I need to look behind me when I get to the top and then run away. I guess that's it. Thanks FEAR hot line.",
+      "categories": [
+        "Being Attacked",
+        "Places",
+        "This Project"
+      ]
+    },
+    {
+      "file": "hotlines.wav",
+      "title": "hotlines",
+      "text": "I'm afraid of hot lines ",
+      "categories": [
+        "This Project"
+      ]
+    },
+    {
+      "file": "hurting_my_partner.wav",
+      "title": "hurting my partner",
+      "text": "My greatest fear is hurting my partner.",
+      "categories": [
+        "Emotions/Relationships"
+      ]
+    },
+    {
+      "file": "inability_1-2.wav",
+      "title": "inability",
+      "text": "inability ",
+      "categories": [
+        "Illness/Disability"
+      ]
+    },
+    {
+      "file": "inaction.wav",
+      "title": "inaction",
+      "text": "I guess what I'm most afraid of is that uh everything that doesn't work out in my life will be because of my own action or inaction.",
+      "categories": [
+        "Indecision",
+        "Missing Out"
+      ]
+    },
+    {
+      "file": "incapableofloving_1-2.wav",
+      "title": "incapable of loving",
+      "text": "I'm afraid the online that I uh I'm not capable of loving someone as much as they left me. That's all thanks.",
+      "categories": [
+        "Emotions/Relationships"
+      ]
+    },
+    {
+      "file": "injury,_aging_body.wav",
+      "title": "injury, aging body",
+      "text": "In in this moment with um with this sort of rare and unpredictable injury affecting my mobility I am worried more so fearful more so than maybe ever before of um future future body issues of of the of the challenges of of a body aging and um and and and and the ability to just kind of one's ability is lessening and weakening as a result and the sort of challenges of keeping up with body and that's that's the number one right now.",
+      "categories": [
+        "Body",
+        "Illness/Disability",
+        "Old Age"
+      ]
+    },
+    {
+      "file": "insanity_1-2.wav",
+      "title": "insanity",
+      "text": "insanity ",
+      "categories": [
+        "Illness/Disability"
+      ]
+    },
+    {
+      "file": "iraq_presence_survey.wav",
+      "title": "iraq presence survey",
+      "text": "...believe our presence in Iraq is still needed press one for yes two for no.",
+      "categories": []
+    },
+    {
+      "file": "judge_jail_time.wav",
+      "title": "judge jail time",
+      "text": "I fear that this judge down in Effingham is going to push it to the extent and possibly give me jail time huge fines and persecute me to the max.",
+      "categories": [
+        "People"
+      ]
+    },
+    {
+      "file": "judged_for_boring_fear.wav",
+      "title": "judged for boring fear",
+      "text": "Um hello I am most afraid of being judged for having a boring fear. That's all.",
+      "categories": [
+        "Fear Itself",
+        "This Project"
+      ]
+    },
+    {
+      "file": "kneecaps.wav",
+      "title": "kneecaps",
+      "text": "I changed my mind I'm definitely afraid of kneecaps for sure. Word. ",
+      "categories": [
+        "Body"
+      ]
+    },
+    {
+      "file": "lied_to_myself.wav",
+      "title": "lied to myself",
+      "text": "I'm afraid that I've lied to myself. I'm afraid that the three years I spent in school are wasted. I'm afraid that I have no talent for what I'm majoring in and that when I graduate my diploma will be nothing more than a piece of paper reminding me of the things that I could never do.",
+      "categories": [
+        "Failure",
+        "Self"
+      ]
+    },
+    {
+      "file": "little_sister.wav",
+      "title": "little sister",
+      "text": "Often the little sister. She's terrifying. She fills me with fear every time I'm around her.",
+      "categories": [
+        "Family"
+      ]
+    },
+    {
+      "file": "loneliness,failure,death_1-2.wav",
+      "title": "loneliness, failure, death",
+      "text": "I'm most afraid of loneliness, especially getting old and being lonely not being able to have someone you love um and I'm afraid of failure and I'm afraid of the people I love uh and their death.",
+      "categories": [
+        "Death",
+        "Emotions/Relationships",
+        "Failure",
+        "Loneliness",
+        "Old Age"
+      ]
+    },
+    {
+      "file": "loneliness_failure_death_1-2.wav",
+      "title": "loneliness, failure, death",
+      "text": "I am most afraid of I think in order of um descending priority from most afraid of to least afraid of uh loneliness or specifically getting old and being lonely and then um failure failure as creative person or just failure in general and third I'm afraid of death but more death of the people I love than my own death because I really don't think about my own death that much and once you're dead you know what's there to be afraid of.",
+      "categories": [
+        "Death",
+        "Emotions/Relationships",
+        "Failure",
+        "Loneliness",
+        "Old Age"
+      ]
+    },
+    {
+      "file": "lonelywhenold_1-2.wav",
+      "title": "lonely when old",
+      "text": "I am afraid of being lonely when I'm old.",
+      "categories": [
+        "Loneliness",
+        "Old Age"
+      ]
+    },
+    {
+      "file": "longlist_1-2.wav",
+      "title": "imbalance, love, not fulfilling potential",
+      "text": "Um yeah I'm most afraid of imbalance um sabotaging my faith and uh love or relationships with my relentless scrutiny for weakness um also afraid of betrayal and I am afraid of running out of strength and becoming some sort of zombie sellout which I guess you know also leads to my fear of disappointing people that I love um and I guess uh I'm afraid of not fulfilling my potential whatever the hell that is. In general though I'd have to say that I try my damndest not to live my life uh in fear I'd much rather be motivated by more positive things so yeah. Eight eight eight.",
+      "categories": [
+        "Emotions/Relationships",
+        "Failure",
+        "Illness/Disability",
+        "Spiritual"
+      ]
+    },
+    {
+      "file": "losing_husband.wav",
+      "title": "losing husband",
+      "text": "I am most afraid of losing my husband.",
+      "categories": [
+        "Emotions/Relationships"
+      ]
+    },
+    {
+      "file": "losing_joy.wav",
+      "title": "losing joy",
+      "text": "Hi. Um I think my greatest fear is to lose like joy or happiness. Um I want to find joy in my life so my biggest fear is that I won't um or I'll lose it. Thanks bye.",
+      "categories": [
+        "Emotions/Relationships"
+      ]
+    },
+    {
+      "file": "losing_loved_ones.wav",
+      "title": "losing loved ones",
+      "text": "I'm afraid of um losing the ones I love.",
+      "categories": [
+        "Emotions/Relationships"
+      ]
+    },
+    {
+      "file": "losing_mother_too_early.wav",
+      "title": "losing mother too early",
+      "text": "Uh one of the people who just called you was my mother what I'm most afraid of her thinking yourself in some sort of uh psychosis because that she she worries a lot and that's not healthy to worry that much so I'd say I'm most afraid of losing her too early.",
+      "categories": [
+        "Emotions/Relationships",
+        "Family",
+        "Illness/Disability"
+      ]
+    },
+    {
+      "file": "losing_my_mother,_ocean.wav",
+      "title": "losing my mother, ocean",
+      "text": "I am most afraid of losing my mother. Also being alone in the middle of the ocean not able to see what's under me um with no idea of how I will save myself or not knowing how I will die. Yes okay bye.",
+      "categories": [
+        "Death",
+        "Family",
+        "Loneliness",
+        "Nature"
+      ]
+    },
+    {
+      "file": "losing_touch_w-_self.wav",
+      "title": "losing touch with self",
+      "text": "One time I lost touch with myself and I let everything fall apart and I think my biggest fear is that I'll do it again.",
+      "categories": [
+        "Self"
+      ]
+    },
+    {
+      "file": "losingcontrolofclass_1-2.wav",
+      "title": "losing control of class",
+      "text": "I think I'm most afraid of losing control of my class and also gaining control of my class. I don't know which is scarier. I'm also afraid of losing freshman in other words not getting enough freshman to graduate. But those are probably not my worst fears. I think my worst fear is making a fool of myself. Okay. ",
+      "categories": [
+        "People",
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "loss_of_privacy.wav",
+      "title": "loss of privacy, self revealed",
+      "text": "Yeah I think I'm most afraid first of all the loss of privacy and that somehow all of the privacy that I have built up around myself both the technology and uh by telling people certain things rather than other things about myself somehow those walls will be breached I guess and uh and so it's much easier to tell a telephone rather than anyone else what you're most afraid of because it's weird you really don't feel terribly judged the loss of privacy is a big one for me it was just such a chance and so that your privacy will be taken away from you at any whether through technological means or I mean at least for me that I'll be tripped up in all the various things that I tell other people right and that they'll somehow see you know the discontinuities in the things that I say. And you know I mean it's happened before and you know particularly when I'm you know making friends or attempting to make friends and yeah conforming myself to a certain kind of person that they might like or that I think they might like. And I spin into the realm fantasy and there's nothing else for me to say yeah and they they know they know that I've completely been lying to them the entire time and it's not because I wanted to pull a fast one on them. It's because I wanted them to like me I guess so or I wanted to seem more successful maybe since I'm young it's difficult to recount all your successes because I mean you're still in this sort of gestating period and um you really haven't done that much so it's difficult to know who you are except through your fantasies at a time like that just really haven't been um you haven't been made or solidified in a lot of ways so biggest fear my loss of fantasy or the fact my fantasy might collapse that my really private version of myself which is very small might actually be revealed.",
+      "categories": [
+        "People",
+        "Self"
+      ]
+    },
+    {
+      "file": "loved_ones_dying.wav",
+      "title": "loved ones dying",
+      "text": "Hi I'm afraid of my loved ones dying.",
+      "categories": [
+        "Death",
+        "Emotions/Relationships",
+        "Family"
+      ]
+    },
+    {
+      "file": "madeline_waits.wav",
+      "title": "madeline waits",
+      "text": "Madeline Waits",
+      "categories": [
+        "People"
+      ]
+    },
+    {
+      "file": "makingwrongdecissions_1-2.wav",
+      "title": "making wrong decissions",
+      "text": "Uh I'm most afraid I think of making the wrong decision every single day no matter where I am or what I'm doing.",
+      "categories": [
+        "Failure",
+        "Indecision"
+      ]
+    },
+    {
+      "file": "matters_of_state.wav",
+      "title": "matters of state",
+      "text": "Actually I am afraid about matters of state I'm afraid of our nation imploding and because of our own uh insistence on um how to say frivolous lifestyle. I think a lot of people are working a lot harder and everywhere else in the world and we insist on sitting on our butts and not working hard and I think we need to change that or it's going to catch up with us. That's what I'm afraid of.",
+      "categories": [
+        "People",
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "mind_playing_tricks,_daughter_dying.wav",
+      "title": "mind playing tricks, daughter dying",
+      "text": "I'm afraid of my worst one of my biggest fears is uh I guess my mind playing tricks on me. I have to work one of the greatest fears I have is my mind check in my eyes to believe something's there like uh something that's gonna jump on I have a dark corner or in the closet. Something's going to jump out of the closet in the dark you know because the door was left open and a ghost or something scary's gonna jump out. I've had night terrors since I was seventeen and that's my worst fear. And I another fear is that I have a daughter and that she's going to pass away before me and I don't want to go through that I don't want to go through that at all. It would tear me up. And uh thank you bye.",
+      "categories": [
+        "Death",
+        "Family",
+        "Self",
+        "Sleep"
+      ]
+    },
+    {
+      "file": "minimal_artwork_about_fear.wav",
+      "title": "minimal artwork about fear",
+      "text": "I'm afraid of an art work, a minimal artwork and a limited art work, constituting my entire fear within such a minimal and limited sphere.",
+      "categories": [
+        "This Project"
+      ]
+    },
+    {
+      "file": "misinformation.wav",
+      "title": "misinformation",
+      "text": "fear of misinformation ",
+      "categories": [
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "missed_opportunity.wav",
+      "title": "missed opportunity",
+      "text": "Um my fear is that when the right opportunity comes up I won't know the right thing to do.",
+      "categories": [
+        "Indecision",
+        "Missing Out"
+      ]
+    },
+    {
+      "file": "missing_out_on_life,_cowardice.wav",
+      "title": "missing out on life, cowardice",
+      "text": "Missing out on life and increasing degrees due to a growing cowardice.",
+      "categories": [
+        "Failure",
+        "Missing Out"
+      ]
+    },
+    {
+      "file": "modem_sound.wav",
+      "title": "modem sound",
+      "text": "",
+      "categories": []
+    },
+    {
+      "file": "murdered_by_fascist_bullets.wav",
+      "title": "murdered by fascist bullets",
+      "text": "Hello uh my name is Rico actually that's not my real name that's my made up confessional name my real name is Michael uh and I am calling uh to tell you that I'm most afraid of being violently murdered by fascist bullets uh I feel so much better and I hope you will too. Bye.",
+      "categories": [
+        "Being Attacked",
+        "Death"
+      ]
+    },
+    {
+      "file": "mutilation,_unloved_animals,_divine_disconnect.wav",
+      "title": "mutilation, unloved animals, divine disconnect",
+      "text": "I'm most afraid of something really gruesome like the fear of being mutilated in some way and I'm very afraid and that for anyone else and I feel for animals that are cooped up and not loved and I feel for I fear my greatest fear personally is that I don't find my connection with the divine and with my purpose to serve others. Thank you.",
+      "categories": [
+        "Animals",
+        "Being Attacked",
+        "Spiritual"
+      ]
+    },
+    {
+      "file": "my_writers_voice.wav",
+      "title": "my writers voice",
+      "text": "I'm afraid that I will never trust my writer's voice and I will never get my research in line and take on the tasks in poetry and in non fiction that it's just too overwhelming and I struggle against every day. Thank you.",
+      "categories": [
+        "Psychological",
+        "Self"
+      ]
+    },
+    {
+      "file": "myfamily2_1-2.wav",
+      "title": "my family 2",
+      "text": "my family ",
+      "categories": [
+        "Family"
+      ]
+    },
+    {
+      "file": "myself,_what_I_can't_accomplish.wav",
+      "title": "myself, what I can't accomplish",
+      "text": "I think what I am afraid of most is myself. I I think I think that would be uh a good way to put it. I I am afraid of what I am capable of under the right or wrong circumstances um or or could be capable of I'm afraid uh um... what I could never accomplish might never accomplish being who I am and various other aspects. That's cryptic enough. Um yeah.",
+      "categories": [
+        "Self"
+      ]
+    },
+    {
+      "file": "myself_(hits_home).wav",
+      "title": "myself (hits home)",
+      "text": "This question hits home. I guess I'm most afraid of myself and what's there or not there.",
+      "categories": [
+        "Self"
+      ]
+    },
+    {
+      "file": "myself_1-2.wav",
+      "title": "myself",
+      "text": "I'm afraid of myself because I'm a gangbanger.",
+      "categories": [
+        "Self"
+      ]
+    },
+    {
+      "file": "need_a_cab_1-2.wav",
+      "title": "need a cab",
+      "text": "Yeah I need to cat but the major station downtown Madison and Canal yeah call like about fifteen minutes ago and um no cab has arrived my name is Ali Khan wearing black and beige right in front on the pay phone uhhuh thank you thank you bye.",
+      "categories": []
+    },
+    {
+      "file": "needles.wav",
+      "title": "needles",
+      "text": "I'm scared of needles.",
+      "categories": [
+        "Objects"
+      ]
+    },
+    {
+      "file": "never_understanding.wav",
+      "title": "never understanding",
+      "text": "never understanding ",
+      "categories": [
+        "Psychological",
+        "The Unknown"
+      ]
+    },
+    {
+      "file": "neverwakingfromadolescence_1-2.wav",
+      "title": "never waking from adolescence",
+      "text": "or maybe a most afraid of never waking from this prolonged adolescence ",
+      "categories": [
+        "Psychological",
+        "Self"
+      ]
+    },
+    {
+      "file": "new_job_eat_me_alive.wav",
+      "title": "new job eat me alive",
+      "text": "I fear that my new job will eat me alive ",
+      "categories": [
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "night_squid.wav",
+      "title": "night squid",
+      "text": "I'm most afraid of gaining consciousness in the middle of the night in the middle of the ocean and having the sinking feeling of not knowing what's beneath me and imagining a gigantic squid coming up from under me and making me feel like a speck of dust and swallowing me and ripping me apart.",
+      "categories": [
+        "Animals",
+        "Being Attacked",
+        "Nature"
+      ]
+    },
+    {
+      "file": "no_longer_have_fears.wav",
+      "title": "no longer have fears",
+      "text": "I no longer have fears.",
+      "categories": []
+    },
+    {
+      "file": "no_one_loving_me_strong_as_I_love_them.wav",
+      "title": "no one loving me strong as I love them",
+      "text": "I guess I'm just really terrified of um nobody ever loving me the way that I would let them. I feel like I care about people really strongly and I feel like nobody ever really feel that way about me and that nobody ever will and that I'll be alone for the rest of my life. I guess that's it.",
+      "categories": [
+        "Emotions/Relationships",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "no_protecting_children,_growing_old_alone.wav",
+      "title": "no protecting children, growing old alone",
+      "text": "What I'm most afraid of I guess um I'm most afraid of something happening to my children um my job is to protect them so I'm I'm afraid of that. After reading a little blurb on the door I'm I guess I'm afraid of being alone um not being alone like just growing old alone. Thanks.",
+      "categories": [
+        "Family",
+        "Loneliness",
+        "Old Age"
+      ]
+    },
+    {
+      "file": "no_stimulation.wav",
+      "title": "no stimulation",
+      "text": "I think the thing that I'm most afraid of is having no stimulation whatsoever um because even if things are really shitty then at least it's some sort of feeling that you can react to and you can work with but if there's no stimulation then you have you're completely flat and that to me would be unbearable.",
+      "categories": [
+        "SensoryDeprivation"
+      ]
+    },
+    {
+      "file": "nohtinghere__1-2.wav",
+      "title": "nothing here",
+      "text": "nothing here",
+      "categories": []
+    },
+    {
+      "file": "noonewillcall_1-2.wav",
+      "title": "noone will call",
+      "text": "I'm most afraid but no one will call or that too many people will call and I'll be overwhelmed by having to record all of their responses.",
+      "categories": [
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "not_being_liked,_accepted.wav",
+      "title": "not being liked, accepted",
+      "text": "Most afraid of that's a hard one but I think truly it is probably on the the my daily basis here is probably not being like or accepted which is not quite as scary as a big bad wolf for other things but that is probably the fear that I carry with me um most often are the top most often. Ciao. ",
+      "categories": [
+        "Belonging"
+      ]
+    },
+    {
+      "file": "not_being_truly_loved.wav",
+      "title": "not being truly loved",
+      "text": "My greatest fear is not knowing what it feels like to be truly loved by someone not loved in the way that our society describes it but in a way that we can feel within our hearts. There are no words to describe it. There are no actions to describe it. You let it go. There are no forms that fit a pretty determined description um that you simply close your eyes you believe and you trust in what is given you. ",
+      "categories": [
+        "Emotions/Relationships"
+      ]
+    },
+    {
+      "file": "not_belonging.wav",
+      "title": "not belonging",
+      "text": "I am most afraid of not finding my inner purpose or sense of belonging within my body among people and on this earth.",
+      "categories": [
+        "Belonging",
+        "Body"
+      ]
+    },
+    {
+      "file": "not_done_for_party.wav",
+      "title": "not done for party",
+      "text": "that I'm not going to get everything done in time for the party",
+      "categories": [
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "not_finishing_my_film_or.wav",
+      "title": "not finishing my film",
+      "text": "not finishing my film forever or ever making it making the film",
+      "categories": [
+        "Failure"
+      ]
+    },
+    {
+      "file": "not_fulfilling_dreams,_kidnapped.wav",
+      "title": "not fulfilling dreams, kidnapped",
+      "text": "One of the things I'm the most afraid of is living my life without accomplishing my dreams um and without fulfilling my purpose and another thing that I'm most afraid of is being kidnapped.",
+      "categories": [
+        "Being Attacked",
+        "Failure"
+      ]
+    },
+    {
+      "file": "not_knowing_myself.wav",
+      "title": "not knowing myself",
+      "text": "not knowing myself",
+      "categories": [
+        "Psychological",
+        "Self"
+      ]
+    },
+    {
+      "file": "not_knowing_what_I_want.wav",
+      "title": "not knowing what I want",
+      "text": "I am afraid of not knowing what I want ",
+      "categories": [
+        "Indecision"
+      ]
+    },
+    {
+      "file": "not_valuing_other_lives.wav",
+      "title": "not valuing other lives",
+      "text": "I'm afraid of people not taking care of one another and not valuing other lives and doing random things to hurt one another and I'm afraid of something like that ever happening to my son or my family or me.",
+      "categories": [
+        "Emotions/Relationships",
+        "Family"
+      ]
+    },
+    {
+      "file": "notbeingabletobuyhouse_1-2.wav",
+      "title": "not being able to buy house",
+      "text": "I'm afraid that I won't be able to buy this house that I put an offer in on.",
+      "categories": [
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "notgettingenoughworkdone_1-2.wav",
+      "title": "not getting enough work done",
+      "text": "I'm afraid of not getting enough work done enough uh ideas that I have for creative work and at least started.",
+      "categories": [
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "notservicerealgod_1-2.wav",
+      "title": "not serving real god",
+      "text": "not serving the real god",
+      "categories": [
+        "Spiritual"
+      ]
+    },
+    {
+      "file": "nuclear_disaster.wav",
+      "title": "nuclear disaster",
+      "text": "I'm most afraid of nuclear disaster and the panic that would ensue and the way that it would test people to help their fellow man.",
+      "categories": [
+        "Being Attacked",
+        "People"
+      ]
+    },
+    {
+      "file": "of_fear.wav",
+      "title": "fear",
+      "text": "I'm afraid of fear.",
+      "categories": [
+        "Fear Itself"
+      ]
+    },
+    {
+      "file": "ofmyfamily_1-2.wav",
+      "title": "my family",
+      "text": "Of my family. Hello?",
+      "categories": [
+        "Family"
+      ]
+    },
+    {
+      "file": "older_I_get.wav",
+      "title": "older I get",
+      "text": "I fear the older I get...",
+      "categories": [
+        "Old Age"
+      ]
+    },
+    {
+      "file": "packersdefeatingbears_1-2.wav",
+      "title": "Packers crush Bears",
+      "text": "I'm afraid the Green Bay Packers are going to crush the Bears twenty-seven to three.",
+      "categories": [
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "park_bench_wrapped_in_newspapers.wav",
+      "title": "park bench wrapped in newspapers",
+      "text": "Afraid that I'm going to fall asleep on a park bench without any friends around in a city I've never been to wrapped in newspapers and just have nothing left to offer the world. That's my fear.",
+      "categories": [
+        "Failure",
+        "Homelessness",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "penguins_midgets.wav",
+      "title": "penguins midgets",
+      "text": "I'm really afraid of penguins. Penguins with small feet, big feet, lots of fur, no fur, bald heads, not bald heads. I'm afraid of midgets with big calves wait I'm like afraid they're going to hit me in the head pound me into the ground.",
+      "categories": [
+        "Animals",
+        "Being Attacked",
+        "People"
+      ]
+    },
+    {
+      "file": "penis_snatch.wav",
+      "title": "penis snatch",
+      "text": "I'm afraid that if I take my hands off of my penis someone's going to come out and snatch it away from me.",
+      "categories": [
+        "Body"
+      ]
+    },
+    {
+      "file": "peoplelurkingindark_1-2.wav",
+      "title": "people lurking in dark",
+      "text": "Uh let's see I'm afraid of people lurking in the dark coming to cut out my organs when I least suspect it. I think that's about all for right now.",
+      "categories": [
+        "Being Attacked",
+        "Dark",
+        "People"
+      ]
+    },
+    {
+      "file": "peoplerealizingmylies_1-2.wav",
+      "title": "people realize fraud",
+      "text": "I'm afraid that one day all of the people around me will realize that I've been living a lie and I'll awaken to who I really am a fraud.",
+      "categories": [
+        "Belonging",
+        "Psychological"
+      ]
+    },
+    {
+      "file": "piglets.wav",
+      "title": "n******s",
+      "text": "----",
+      "categories": []
+    },
+    {
+      "file": "piranhas_1-2.wav",
+      "title": "piranhas",
+      "text": "um piranhas",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "poisoning.wav",
+      "title": "poisoning",
+      "text": "I guess my greatest fear would be getting poisoned. I don't even uh know if people do that anymore but that sensation after consuming something and realize something is terribly wrong and then dying suddenly. Very afraid of that.",
+      "categories": [
+        "Being Attacked",
+        "Death"
+      ]
+    },
+    {
+      "file": "post_coffee.wav",
+      "title": "coffee - too much",
+      "text": "What I fear most is that feeling after you drank a lot of coffee and you had a sunny day and you're you're feeling you're feeling great and you're feeling invincible but inevitably all the the to the little chemical left that you've been coasting on just all the sudden plummets out and you're left dark alone and tired but still with that a sharp mind gnawing away and sometimes it feels like death and sometimes it just feels incredibly lonely and I'm very afraid of being there. Thanks bye.\n",
+      "categories": [
+        "Body",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "powerlines.wav",
+      "title": "power lines",
+      "text": "I'm afraid of power lines.",
+      "categories": [
+        "Objects"
+      ]
+    },
+    {
+      "file": "progress.wav",
+      "title": "progress",
+      "text": "progress",
+      "categories": []
+    },
+    {
+      "file": "pundits_are_right.wav",
+      "title": "horrible things are true",
+      "text": "My biggest fear is that all of the all of the people on TV and all the people writing articles and books and and telling us that things are awful in the world and we're destroying the environment and and that the political system is corrupt and all of the horrible things we hear are really true and we'll have to change our lifestyles to cope with that or it'll be too late so we won't be able to do anything.",
+      "categories": [
+        "People",
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "purple_pants.wav",
+      "title": "purple pants, holidays, retarded children",
+      "text": "I am really afraid of... really afraid of... I'm not really afraid of anything except for that one thing that really right out purple pants when people war purple pants it is like really scary. Pink shirts with purple pants... really talking to a recording right now. Okay Halloween for sure like who's not who's not a afraid of Halloween. Christmas always afraid the big guy's going to come in my room presents start hitting me in the head with them. I'm like super afraid of Easter because who knows how big that bunny is. You know how many eggs that thing delivers? Like okay he might be afraid of Santa and I don't know yet. I'm really of the elf too I forgot about that. I wonder if they have big calves. Right I just called like five minutes ago and said I was a little people with big calves. I'm probably going to I'll probably have retarded children I'm afraid of that.",
+      "categories": [
+        "Illness/Disability",
+        "Magical Fictional"
+      ]
+    },
+    {
+      "file": "pussy_1-2.wav",
+      "title": "pussy",
+      "text": "What am I the most of afraid of? Pussy.",
+      "categories": [
+        "Body",
+        "People",
+        "Sex"
+      ]
+    },
+    {
+      "file": "rape.wav",
+      "title": "rape",
+      "text": "Uh I'm pretty sure that my greatest fear is um rape um I'm a straight male and uh I've never been molested or touched but I've had lots of dreams about being raped when I was like little and it's it's the most terrifying thing I can think of um I don't know what else to say. Help me, Scott.",
+      "categories": [
+        "Being Attacked"
+      ]
+    },
+    {
+      "file": "really_mean_dogs,_squirrels.wav",
+      "title": "really mean dogs, squirrels, crickets",
+      "text": "Really mean dogs. Squirrels. She meant crickets.",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "rick_perry,_3am_call.wav",
+      "title": "rick perry, 3am call",
+      "text": "Rick Perry being elected president and then getting a three AM call that is my greatest fear.",
+      "categories": [
+        "People"
+      ]
+    },
+    {
+      "file": "rick_perry_as_president.wav",
+      "title": "rick perry as president",
+      "text": "Yeah what I'm most afraid of is Rick Perry becoming president of the United States and I've lived in Texas is pretty much most of my life and I relived under Rick Perry's governorship for the past ten years and believe me if you thought George W. bush was bad just wait till Perry's president that's right yeah I mean that's my biggest fear forget it man even Sarah Palin would make a better president than Rick Perry and uh anyway goodbye.",
+      "categories": [
+        "People",
+        "Practical/SOcial"
+      ]
+    },
+    {
+      "file": "riding_bike,_hit_by_car.wav",
+      "title": "riding bike, hit by car",
+      "text": "I'm scared to ride my bike and get hit by a car or another bicycle and go flying across the concrete things.",
+      "categories": [
+        "Accidents"
+      ]
+    },
+    {
+      "file": "rings_stuck.wav",
+      "title": "rings stuck",
+      "text": "I have a fear of rings being on my finger because I'm afraid they're going to get stuck and I would have no way of getting them off but then I'm not to be able to clean underneath them and suddenly this flesh eating virus is just going to like accumulate and eventually start at my fingers and it's gonna eat my entire body of course saving my internal organs for the end so I can actually be alive and I could feel this all happened in. And clowns.",
+      "categories": [
+        "Illness/Disability",
+        "Objects",
+        "People"
+      ]
+    },
+    {
+      "file": "roaches.wav",
+      "title": "roaches",
+      "text": "I am terrified of roaches.",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "sadness_of_my_children.wav",
+      "title": "sadness of my children",
+      "text": "I'm afraid of the sadness of my children.",
+      "categories": [
+        "Emotions/Relationships",
+        "Failure"
+      ]
+    },
+    {
+      "file": "screaming_crying_person.wav",
+      "title": "[screaming and crying]",
+      "text": "[screaming and crying]",
+      "categories": []
+    },
+    {
+      "file": "serial_killers.wav",
+      "title": "serial killers",
+      "text": "Uh serial killers. I said it. Serial killers.",
+      "categories": [
+        "People"
+      ]
+    },
+    {
+      "file": "sex_hiv_1-2.wav",
+      "title": "sex hiv ",
+      "text": "Hello I'm most afraid of sex. I don't know if a woman has HIV. Hello hello... I'm afraid of sex and I know you are too.",
+      "categories": [
+        "Illness/Disability",
+        "Sex"
+      ]
+    },
+    {
+      "file": "sex_sick.wav",
+      "title": "sex",
+      "text": "sex",
+      "categories": [
+        "Sex"
+      ]
+    },
+    {
+      "file": "sharks,_alligators,_hogs,_snakes.wav",
+      "title": "sharks, alligators, hogs, snakes, dogs",
+      "text": "I am scared of sharks, alligators, leeches, um and hogs and also some snakes and some very very bad dogs and um I am scared of yeah that's it. Bye.",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "sharks,_alligators,_roaches,_leeches,_monsters....wav",
+      "title": "list ",
+      "text": "I'm afraid of sharks, alligators, leeches, roaches, fire ants, June bugs, dinosaurs, um big monsters that like are hairy and that can make you bleed, rhinoceroses,  T-Rex, and I'm scared of thunder like lightning that could shock you and I'm scared of hospitals and I'm scared of clowns (I hate clowns too) and I get scared in haunted houses, and my aunt's really funny.",
+      "categories": [
+        "Animals",
+        "Nature",
+        "People",
+        "Places"
+      ]
+    },
+    {
+      "file": "sharks,_leeches,_fireants.wav",
+      "title": "sharks, leeches,roaches, fire ants",
+      "text": "Um my fear I'm afraid of sharks, leeches, roaches, and fire ants.",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "sharpobjectsonteeth_1-2.wav",
+      "title": "sharpobjectsonteeth 1-2",
+      "text": "I am afraid of metal objects encountering my teeth tools in particular and stop signs. Sometimes when I um go to get a wrench or something to use for a normal service the uh image of that wrench being used to rip out my teeth will flashed through my mind for no reason I don't understand at all wrenches in particular wrenches and for some reason also stop signs somehow passing through my jaw as I drive you know in my teeth. I don't like it. It's scary. Okay. ",
+      "categories": [
+        "Body",
+        "Objects"
+      ]
+    },
+    {
+      "file": "sick_naseous_trapped.wav",
+      "title": "sick, trapped",
+      "text": "Hi um the thing that I'm most afraid of in this world is being sick um being nauseated throwing up just being sick in your own physical body and not being able to get out of it you know where you feel you feel trapped like you can't get away from that that feeling of being sick or feeling sick that's what I'm most afraid of.",
+      "categories": [
+        "Body",
+        "Illness/Disability"
+      ]
+    },
+    {
+      "file": "sleep_1-2.wav",
+      "title": "snakes",
+      "text": "snakes",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "snakes,_being_forgotten.wav",
+      "title": "snakes, being forgotten",
+      "text": "I'm terrified of snakes and being forgotten when I die.",
+      "categories": [
+        "Animals",
+        "Forgotten"
+      ]
+    },
+    {
+      "file": "someone_close_will_die.wav",
+      "title": "someone close will die",
+      "text": "My biggest fear is that someone close to me is going to die. When I say goodbye to people I I'm always afraid that is the last time I'm going to see them so I always make sure that I hug them and kissed them and tell them that I love them.",
+      "categories": [
+        "Death",
+        "Emotions/Relationships"
+      ]
+    },
+    {
+      "file": "sons_getting_into_drugs.wav",
+      "title": "sons getting into drugs",
+      "text": "I'm most afraid of one of my sons getting into drugs or alcohol and getting into trouble because of that.",
+      "categories": [
+        "Family"
+      ]
+    },
+    {
+      "file": "spiders.wav",
+      "title": "spiders",
+      "text": "I'm afraid of uh spiders.",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "spiders_1-2.wav",
+      "title": "spiders",
+      "text": "spiders",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "spiderswhenasleep_1-2.wav",
+      "title": "spiders when asleep",
+      "text": "What I'm most afraid of is is that I'm laying bed coming home from a late party so I'm pretty drunk and that I wake up and I think it's a dream and that there's little spiders and all kinds of just ridiculously slimy gross nasty insects climbing all over my body but you know just by chance that night I actually fell asleep naked since I'm kind of drunk I actually think it's a dream but then when I wake up in the morning you know like dying for water I realize that these animals have all infested in all of my offices. It's pretty gross, huh? All right bye.",
+      "categories": [
+        "Animals",
+        "Body"
+      ]
+    },
+    {
+      "file": "starvation_in_the_desert.wav",
+      "title": "starvation in the desert",
+      "text": "Well I had to hang up and now I'm calling back cause I had to think about that a few things to be afraid of um so I think that like starvation in the desert that sounds pretty awful I prefer to not be in the desert. Well there you go bye.",
+      "categories": [
+        "Death",
+        "Places"
+      ]
+    },
+    {
+      "file": "steppingoninsects_1-2.wav",
+      "title": "stepping on insects",
+      "text": "I suppose the one thing I'm most afraid of would be that stepping on harmless helpless insects that crawl around my apartment before their natural time is up.",
+      "categories": [
+        "Accidents",
+        "Animals"
+      ]
+    },
+    {
+      "file": "suffocation,_utter_isolation.wav",
+      "title": "suffocation, utter isolation",
+      "text": "Beyond suffocation I believe I am most afraid of utter isolation that is to be stripped of my senses and my ability to speak.",
+      "categories": [
+        "Drowning/Suffocation",
+        "Loneliness",
+        "SensoryDeprivation"
+      ]
+    },
+    {
+      "file": "survey.wav",
+      "title": "survey",
+      "text": "if you would like to participate in the survey please press one now if not simply press two or hang up ",
+      "categories": []
+    },
+    {
+      "file": "teenage_daughter_won't_respect_me.wav",
+      "title": "teenage daughter won't respect me",
+      "text": "I'm afraid that when my daughter becomes a teenager she will not appreciate me or respect me the way I would like her to see me. I'm afraid she's going to see right through me and think that I'm just foolish.",
+      "categories": [
+        "Emotions/Relationships",
+        "Failure"
+      ]
+    },
+    {
+      "file": "teleport_to_sun_unable_to_die.wav",
+      "title": "teleport to sun unable to die",
+      "text": "Uh hello um let's see for when I was about ten I had this fear that it was kind of ridiculous but I just have this fear that I'd be instantly teleported to the middle of the sun and I couldn't die and that really scared me because it's like a blink of an eye like no waiting no traveling just like instantly middle of the sun and burning that you couldn't like you wouldn't burn really you would just be like really hot but then I had this like I kind of worked it out that you know like if the temperatures that hot you probably wouldn't feel it because I think I read in some science book that the temperature like you wouldn't feel high temperatures you only feel like they'd just be like the molecules be moving too fast or something I don't remember but so it's okay but then I would just be stuck in the middle of the sun and I I don't know like just instantly and that but it went away I think I rationalized that one but right like ten ten to twelve that was a big one.",
+      "categories": [
+        "Detailed/Specific",
+        "Magical Fictional",
+        "Nature"
+      ]
+    },
+    {
+      "file": "testcall_tollfreenumber_1-2.wav",
+      "title": "test call toll free number",
+      "text": "Hello this is S. B. C. doing a test call on your new toll free number eight hundred three two three seven zero three zero is working thank you bye.",
+      "categories": []
+    },
+    {
+      "file": "the_dark,_aliens.wav",
+      "title": "the dark, aliens",
+      "text": "I'm afraid of the dark and sometimes aliens.",
+      "categories": [
+        "Dark",
+        "Magical Fictional"
+      ]
+    },
+    {
+      "file": "the_dark.wav",
+      "title": "dark",
+      "text": "the dark ",
+      "categories": [
+        "Dark"
+      ]
+    },
+    {
+      "file": "the_dark_2.wav",
+      "title": "dark",
+      "text": "I'm scared of the dark ",
+      "categories": [
+        "Dark"
+      ]
+    },
+    {
+      "file": "the_dark_3.wav",
+      "title": "dark",
+      "text": "the dark",
+      "categories": [
+        "Dark"
+      ]
+    },
+    {
+      "file": "the_fuck.wav",
+      "title": "the fuck",
+      "text": "The fuck?",
+      "categories": []
+    },
+    {
+      "file": "the_future,_people,_being_alone.wav",
+      "title": "the future, people, being alone",
+      "text": "I think I'm afraid of being alone or basically the future because the future is really unknown. And I think I'm afraid of... people.",
+      "categories": [
+        "Loneliness",
+        "People",
+        "The Unknown"
+      ]
+    },
+    {
+      "file": "the_mall.wav",
+      "title": "the mall",
+      "text": "I'm afraid of the mall.",
+      "categories": [
+        "Places"
+      ]
+    },
+    {
+      "file": "thedark2_1-2.wav",
+      "title": "dark",
+      "text": "the dark",
+      "categories": [
+        "Dark"
+      ]
+    },
+    {
+      "file": "thedark_1-2.wav",
+      "title": "dark",
+      "text": "I'm afraid of the dark. What the fuck's up? Yep I'm afraid of the dark.",
+      "categories": [
+        "Dark"
+      ]
+    },
+    {
+      "file": "thenew,loneliness,theabyss_1-2.wav",
+      "title": "the new, loneliness, the abyss",
+      "text": "I'm afraid of the new such as this phone number, the ocean, space, outer space as in the abyss with no definite ending. I'm also afraid of solitude being completely alone or cut away from humanity.",
+      "categories": [
+        "Loneliness",
+        "Nature",
+        "This Project",
+        "The Unknown"
+      ]
+    },
+    {
+      "file": "theworldsisasappears_1-2.wav",
+      "title": "the world is as appears",
+      "text": "I'm afraid right now that the world is exactly as it appears.",
+      "categories": [
+        "Existential"
+      ]
+    },
+    {
+      "file": "theylikethat(notreal)_1-2.wav",
+      "title": "sex, HIV",
+      "text": "Hello I'm most afraid of sex. I don't know if a woman has HIV. Hello hello... I'm afraid of sex and I know you are too.",
+      "categories": [
+        "Illness/Disability",
+        "Sex"
+      ]
+    },
+    {
+      "file": "thinking....wav",
+      "title": "[blank]",
+      "text": "",
+      "categories": []
+    },
+    {
+      "file": "this_is_all_there_is.wav",
+      "title": "this is all there is",
+      "text": "that this is all there is ",
+      "categories": [
+        "Existential"
+      ]
+    },
+    {
+      "file": "this_is_gay.wav",
+      "title": "raped by midgets, martian",
+      "text": "This is kind of gay. Well my fears are um being raped by midgets while sleeping because uh kind of scary to wake up to like midgets pulling your pants off and they're midgets and stuff so like you'd have to kick them in the face a couple times. And once they're off your bed put your pants up fucking wack them together and hopefully shit falls out of their head like a fucking pinata you know I'm saying dude. Alright that's my fear. Another fear's waking up on the planet Mars a little fucking E.T. dude following around me. Put that shit on the news man... in the movie my friend uh Joe M. and as I like to call him and told me that uh they're making a little movie about fear you know... do something like my fears are waking up to George Bush next to me or something queer like that but I'm going to tell you straight up midgets scare me.",
+      "categories": [
+        "Illness/Disability",
+        "Magical Fictional",
+        "People"
+      ]
+    },
+    {
+      "file": "thunderstorms.wav",
+      "title": "thunderstorms",
+      "text": "thunderstorms",
+      "categories": [
+        "Nature"
+      ]
+    },
+    {
+      "file": "to_be_forgotten.wav",
+      "title": "to be forgotten",
+      "text": "my greatest fear is to be forgotten ",
+      "categories": [
+        "Forgotten"
+      ]
+    },
+    {
+      "file": "toilet_plunging_.wav",
+      "title": "[noise with voices in background]",
+      "text": "[noise with voices in background]",
+      "categories": []
+    },
+    {
+      "file": "tongue_ass_bank_line.wav",
+      "title": "tongue ass bank line",
+      "text": "I have a fear of having my tongue up a beautiful woman's ass and her turning around and looking at me going \"Do I know you?\" and me going, \"Uhh\" and then looking around and realizing I'm in a bank line.",
+      "categories": [
+        "Places",
+        "Sex"
+      ]
+    },
+    {
+      "file": "too_old_to_play_with_grandchildren_1-2.wav",
+      "title": "too old to play with grandchildren 1-2",
+      "text": "I think that I'm afraid of might be that I will be incapacitated so that I won't be able to lift my grandchildren or play with my grandchildren um and see them at their soccer games and their proms. Since I married late and had my children and my thirties I worry a little bit that I will I might have an arthritic situation where I won't be able to play and be with them as much as I would like to be. That's about the only thing that I I am concerned about now. Thank you.",
+      "categories": [
+        "Failure",
+        "Illness/Disability",
+        "Old Age"
+      ]
+    },
+    {
+      "file": "tornados.wav",
+      "title": "tornados",
+      "text": "Hi my uh greatest fear by far is tornadoes. It sounds silly and it's probably tied up in some kind of fear death or something but definitely tornadoes. When I was a kid uh my dad almost got a job in Oklahoma and I don't remember it at all because apparently I had night terrors all night long every night until he did not take the job. I am definitely of tornadoes. I mean what do you do in the middle of the night? You hear it coming like a train. What do you do? Definitely afraid of tornadoes.",
+      "categories": [
+        "Death",
+        "Nature"
+      ]
+    },
+    {
+      "file": "trout_1-2.wav",
+      "title": "trout",
+      "text": "Trout. I'm very scared of trout. I hate trout. They scare me. Trout. Thank you. ",
+      "categories": [
+        "Animals"
+      ]
+    },
+    {
+      "file": "unfit_for_human_association.wav",
+      "title": "unfit for human association",
+      "text": "I think my greatest fear would be to be describe universally as unfit for human association.",
+      "categories": [
+        "Belonging",
+        "Loneliness"
+      ]
+    },
+    {
+      "file": "unlimited_congress.wav",
+      "title": "what if problems with US gov't, states rights",
+      "text": "to limit the government one of Congress's enumerated powers in the constitution no longer limited commerce what we're actually used as a justification to extend Congress's authority over every realm of human life what the president meant to be an equal to Congress has instead become a democratically elected term limited monarch what the president assumed that everything he did was legal just because he's the president what if he can interrupt your regularly scheduled radio and TV programming for a special message from him what if he can declare war on his own what if could read your emails and your texts without a search warrant what if you could kill you without warning what is a supreme court justice no longer looked to the constitution to determine the constitutionality of a law but rather simply to what justices who preceded them thought about it what if the rights and principles guaranteed in the constitution have been so distorted in the past two hundred years as to be unrecognizable by the founders what fifty states are no longer sovereign entities equals to each other and parents of the federal government they voluntarily constituted states were mere problems as of a totally nationalized and fully centralized government what if the constitution was amended stealthily not by constitutional amendments duly ratified by the states but by the constant and persistent expansion of the federal government's role in our lives what if the federal government decided if its own powers were proper and constitutional what if the constitution were no longer the supreme law of the land what if you needed a license from the government to speak to assemble or to protest against the government what if the government didn't like what you plan to say that we didn't give you a license what if the right to keep and bear arms only applied to the government what if posse comitatus the federal law that prohibits our military from occupying our streets were no longer in effect what if the government considered the military an adequate dispenser of domestic law enforcement what if cops looked and acted like troops and you couldn't distinguish the military from the police what if you were not secure in and your person in your papers and your property what a federal agents could write their own search warrants in defiance of the constitution what if the government could decide when you were and were not entitled to a jury trial what if the government to take your property whenever it wanted what if the government could continue prosecuting you until they got the verdict it wanted one of the government to force you to testify against yourself simply by labeling you  a domestic terrorist what if the government could torture you until you said what the government wanted to hear what if people running for president actually supported torture what the government tortured your children to get to you what if government judges and government lawyers intimidated juries and convicting the innocent what if the government can send you to your death and your innocence meant nothing so long as the government procedures were followed what if America's prison population the largest in the world was a cruel and unusual way for a country to be free what if half the prison population never harmed anyone but themselves what if the people had no rights except those the government chose to let them have what if the states had no rights except to do what the federal government commanded what if our elected officials didn't really live among us but instead all have their hearts and homes in Washington DC what if the government could strip you of your rights because of where your mother was when you were born what if the income tax was unconstitutional what if the states will convinced to give up their representation in Congress what the government tried to ban you from using a substance in your body that is older than the government itself what if voting didn't mean anything anymore because both political parties stand for big government what if the government could write any law regulating behavior in tax any event the constitution be damned what if the government was the reason we don't have a constitution anymore what if you could love your country but hate what the government has done to it what is sometimes to love your country you had to alter or abolish the government one of Jefferson was right what if that government is best which governs least what if I'm right what if the government is wrong what if it is dangerous to be right when the government is wrong what if it is better to perish fighting for freedom than to live as a slave what if freedom's greatest hour of danger is now... does the Obama White House have a women problem reading the headlines the last few days you might think they do",
+      "categories": []
+    },
+    {
+      "file": "urbansmog_1-2.wav",
+      "title": "urban smog",
+      "text": "urban smog",
+      "categories": [
+        "Drowning/Suffocation"
+      ]
+    },
+    {
+      "file": "violent_horrible_death.wav",
+      "title": "violent horrible death",
+      "text": "Hi this is made in Detroit I have a strange fear of just dying a horrible death. I just have these flashes where I just wake up and it's like getting hit by a car, getting hit by a truck, going in a plane crash, a car accident, drowning, somebody just torturing me and just killing me. I have a a stranger fear to die in a horrible death and... just gracious I think about it every day and I just don't wanna die a horrible death. I want to die in my sleep. That's it that's it.",
+      "categories": [
+        "Being Attacked",
+        "Death"
+      ]
+    },
+    {
+      "file": "weirdsinging(notreal)_1-2.wav",
+      "title": "[moaning]",
+      "text": "[moaning]",
+      "categories": []
+    },
+    {
+      "file": "werewolves.wav",
+      "title": "werewolves",
+      "text": "Hi Deborah this is Sam LaFrance calling you. I was just doing some research and wanted to see if the FEAR hotline was still active. Glad to hear it is. By the way my greatest fear is werewolves. Talk to you soon bye bye.",
+      "categories": [
+        "Animals",
+        "Magical Fictional"
+      ]
+    },
+    {
+      "file": "where's_michael.wav",
+      "title": "where's michael",
+      "text": "Where's Michael? He went to bed early, mom.",
+      "categories": []
+    },
+    {
+      "file": "wierd_garbled_robot_voice.wav",
+      "title": "[garbled]",
+      "text": "[garbled]",
+      "categories": []
+    },
+    {
+      "file": "world_a_dream,_spiders.wav",
+      "title": "world a dream, spiders",
+      "text": "I think the tone went. The thing that I am most afraid of is that the world we know is only a dream and the dreamer will awake and this beautiful place will no longer exist and spiders.",
+      "categories": [
+        "Animals",
+        "Existential"
+      ]
+    },
+    {
+      "file": "written_word_will_qualify_physical_world.wav",
+      "title": "written word will constitute physical world",
+      "text": "I fear that the written word will consistently constitute my understanding of the physical worlds. World and words need to be separated in some formulation of the understanding in which I can bring them between themselves more so than other selves. ",
+      "categories": [
+        "Existential"
+      ]
+    },
+    {
+      "file": "you_1-2.wav",
+      "title": "failure",
+      "text": "failure ",
+      "categories": [
+        "Failure"
+      ]
+    },
+    {
+      "file": "you_will_judge_me.wav",
+      "title": "someone will judge me",
+      "text": "I fear that someone will hear this and judge me.",
+      "categories": [
+        "This Project"
+      ]
+    },
+    {
+      "file": "youallfornotinformingaboutproject_1-2.wav",
+      "title": "you all",
+      "text": "You all because I have no more information on what this card is about.",
+      "categories": [
+        "This Project"
+      ]
+    }
+  ]
