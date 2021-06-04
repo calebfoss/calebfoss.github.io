@@ -40,6 +40,12 @@ h1 {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 .title {
   font-family: "Pacifico", cursive;
   font-size: 2em;

@@ -69,7 +69,11 @@ function setup() {
   );
   saveButton.parent(controls);
 
-  const footer = createElement("footer", "Caleb Foss, 2021");
+  
+  const footer = createElement("footer");
+  const link = createA("/", "Caleb Foss");
+  link.parent(footer);
+  footer.html(", 2021", true);
 
   noLoop();
   redraw();
