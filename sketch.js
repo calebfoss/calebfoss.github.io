@@ -29,7 +29,7 @@ function setup() {
 
   const textLabel = createElement(
     "label",
-    "Type your name or any word/phrase you'd like to encode"
+    "Type your name or any word/phrase you'd like to encode."
   )
     .attribute("for", "encoding text")
     .parent(controls);
@@ -41,12 +41,13 @@ function setup() {
 
   const flagLabel = createElement(
     "label",
-    "Select the flag for the color palette"
+    "Select the flag for the color palette.\nHold control/command to select multiple."
   )
     .attribute("for", "flag")
     .parent(controls);
-  flagInput = createSelect().id("flag").changed(redraw).parent(controls);
+  flagInput = createSelect(true).id("flag").changed(redraw).parent(controls);
   Object.keys(flags).forEach((flag) => flagInput.option(flag));
+  flagInput.elt.options[0].selected = true;
 
   const configLabel = createElement("label", "Configuration")
     .attribute("for", "config")
@@ -111,13 +112,22 @@ function setup() {
 }
 
 function draw() {
-  const flag = flags[flagInput.value()];
+  const palette = new Array()
+    .concat(
+      ...Array.from(flagInput.elt.options)
+        .filter((option) => option.selected)
+        .map((option) => flags[option.value])
+    )
+    .filter((c, i, arr) => !arr.slice(0, i).some((other) => c === other));
+  const { length: paletteLength } = palette;
   const encoded = textInput
     .value()
     .split("")
-    .map((c) => c.charCodeAt(0).toString(flag.length))
-    .join("")
-    .split("");
+    .reduce(
+      (result, c) =>
+        result.concat(...numberToBase(c.charCodeAt(0), paletteLength)),
+      []
+    );
   const { length: encodedLength } = encoded;
   const config = configInput.value();
   const hDir = int(hDirInput.value());
@@ -126,21 +136,31 @@ function draw() {
   scale(hDir, vDir);
   translate(-width / 2, -height / 2);
   const args = configs[config].getArgs(encodedLength);
-  encoded.forEach((val, i) => configs[config].draw({ flag, val, i, ...args }));
+  encoded.forEach((val, i) =>
+    configs[config].draw({
+      palette,
+      val,
+      i,
+      ...args,
+    })
+  );
   favCanvas.image(mainCanvas, 0, 0, 16, 16);
   document.querySelector("#favicon").href = favCanvas.elt.toDataURL(
     "image/png"
   );
-  const { length: flagLength } = flag;
   titleSpans.forEach((span, i) => {
-    span.style("color", flag[i % flagLength]);
+    span.style("color", palette[i % paletteLength]);
   });
 }
 
-const setColor = (flag, val) => {
-  const colorIndex = int(val);
-  fill(flag[colorIndex]);
-  stroke(flag[colorIndex]);
+const numberToBase = (num, base) =>
+  new Array(ceil(log(num) / log(base)))
+    .fill(0)
+    .map((_, i, { length }) => floor(num / pow(base, length - 1 - i)) % base);
+
+const setColor = (palette, val) => {
+  fill(palette[val]);
+  stroke(palette[val]);
 };
 
 const configs = {
@@ -148,8 +168,8 @@ const configs = {
     getArgs: (encodedLength) => ({
       stripeHeight: height / encodedLength,
     }),
-    draw: ({ flag, val, i, stripeHeight, vDir }) => {
-      setColor(flag, val);
+    draw: ({ palette, val, i, stripeHeight, vDir }) => {
+      setColor(palette, val);
       rect(0, i * stripeHeight, width, stripeHeight);
     },
   },
@@ -157,8 +177,8 @@ const configs = {
     getArgs: (encodedLength) => ({
       stripeWidth: width / encodedLength,
     }),
-    draw: ({ flag, val, i, stripeWidth, hDir }) => {
-      setColor(flag, val);
+    draw: ({ palette, val, i, stripeWidth, hDir }) => {
+      setColor(palette, val);
       rect(i * stripeWidth, 0, stripeWidth, height);
     },
   },
@@ -174,8 +194,18 @@ const configs = {
       const cellHeight = height / vDim;
       return { hDim, vDim, cellWidth, cellHeight };
     },
-    draw: ({ flag, val, i, hDim, vDim, cellWidth, cellHeight, hDir, vDir }) => {
-      setColor(flag, val);
+    draw: ({
+      palette,
+      val,
+      i,
+      hDim,
+      vDim,
+      cellWidth,
+      cellHeight,
+      hDir,
+      vDir,
+    }) => {
+      setColor(palette, val);
       const x = (i % hDim) * cellWidth;
       const y = floor(i / hDim) * cellHeight;
       rect(x, y, cellWidth, cellHeight);
