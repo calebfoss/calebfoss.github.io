@@ -48,29 +48,20 @@ function setup() {
   flagInput = createSelect().id("flag").changed(redraw).parent(controls);
   Object.keys(flags).forEach((flag) => flagInput.option(flag));
 
-  const configLabel = createElement(
-    "label",
-    "Select the configuration for the color bars"
-  )
+  const configLabel = createElement("label", "Configuration")
     .attribute("for", "config")
     .parent(controls);
   configInput = createSelect().id("config").changed(redraw).parent(controls);
   Object.keys(configs).forEach((config) => configInput.option(config));
 
-  const hDirLabel = createElement(
-    "label",
-    "Select the horizontal direction for the colors"
-  );
+  const hDirLabel = createElement("label", "Horizontal direction");
   hDirLabel.attribute("for", "hdir");
   hDirLabel.parent(controls);
   hDirInput = createSelect().id("hdir").parent(controls).input(redraw);
   hDirInput.option("left to right", 1);
   hDirInput.option("right to left", -1);
 
-  const vDirLabel = createElement(
-    "label",
-    "Select the vertical direction for the colors"
-  );
+  const vDirLabel = createElement("label", "Vertical direction");
   vDirLabel.attribute("for", "vdir");
   vDirLabel.parent(controls);
   vDirInput = createSelect().id("vdir").parent(controls).input(redraw);

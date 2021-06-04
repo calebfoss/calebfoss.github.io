@@ -26,6 +26,7 @@ body {
 
 canvas {
   display: block;
+  align-self: center;
 }
 
 header {
@@ -63,6 +64,10 @@ a {
   font-weight: bold;
 }
 
+label {
+  margin-top: 1em;
+}
+
 .title {
   font-family: "Pacifico", cursive;
   font-size: 2em;
@@ -75,12 +80,12 @@ a {
   flex-flow: row wrap;
   padding: 1%;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: stretch;
   align-content: center;
 }
 
 .controls, .explanation {
-  border: black solid 0.5em;
+  border: #aaa solid 0.5em;
   flex-grow: 1;
   flex-basis: 33%;
   display: grid;
