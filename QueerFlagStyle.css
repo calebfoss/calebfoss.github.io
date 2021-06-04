@@ -22,8 +22,8 @@ canvas {
 }
 
 header {
-  height: 10%;
-  padding: 0%;
+  height: 6%;
+  padding: 2%;
   margin: 0;
   text-align: center;
 }
@@ -33,6 +33,11 @@ footer {
   padding: 1%;
   margin: 0;
   text-align: right;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .title {
