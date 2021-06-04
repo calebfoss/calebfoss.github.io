@@ -1,4 +1,4 @@
-let textInput, flagInput, formatInput, saveButton;
+let textInput, flagInput, configInput, hDirInput, vDirInput, saveButton;
 let mainCanvas, favCanvas;
 let titleSpans;
 
@@ -17,10 +17,6 @@ function setup() {
   const appContainer = createElement("div");
   appContainer.class("app");
 
-  mainCanvas = createCanvas(400, 400);
-  mainCanvas.parent(appContainer);
-  favCanvas = createGraphics(16, 16);
-
   background(0);
   noStroke();
 
@@ -28,12 +24,15 @@ function setup() {
   controls.class("controls");
   controls.parent(appContainer);
 
+  const controlTitle = createElement("h2", "Controls");
+  controlTitle.parent(controls);
+
   const textLabel = createElement(
     "label",
     "Type your name or any word/phrase you'd like to encode"
-  );
-  textLabel.attribute("for", "encoding text");
-  textLabel.parent(controls);
+  )
+    .attribute("for", "encoding text")
+    .parent(controls);
   textInput = createInput();
   textInput.input(redraw);
   textInput.id("encoding text");
@@ -43,33 +42,74 @@ function setup() {
   const flagLabel = createElement(
     "label",
     "Select the flag for the color palette"
-  );
-  flagLabel.attribute("for", "flag");
-  flagLabel.parent(controls);
-  flagInput = createSelect();
-  flagInput.id("flag");
-  flagInput.changed(redraw);
+  )
+    .attribute("for", "flag")
+    .parent(controls);
+  flagInput = createSelect().id("flag").changed(redraw).parent(controls);
   Object.keys(flags).forEach((flag) => flagInput.option(flag));
-  flagInput.parent(controls);
 
-  const formatLabel = createElement(
+  const configLabel = createElement(
     "label",
-    "Select the format for the color bars"
-  );
-  formatLabel.attribute("for", "format");
-  formatLabel.parent(controls);
-  formatInput = createSelect();
-  formatInput.changed(redraw);
-  Object.keys(formats).forEach((format) => formatInput.option(format));
-  formatInput.parent(controls);
+    "Select the configuration for the color bars"
+  )
+    .attribute("for", "config")
+    .parent(controls);
+  configInput = createSelect().id("config").changed(redraw).parent(controls);
+  Object.keys(configs).forEach((config) => configInput.option(config));
 
-  saveButton = createButton("save");
+  const hDirLabel = createElement(
+    "label",
+    "Select the horizontal direction for the colors"
+  );
+  hDirLabel.attribute("for", "hdir");
+  hDirLabel.parent(controls);
+  hDirInput = createSelect().id("hdir").parent(controls).input(redraw);
+  hDirInput.option("left to right", 1);
+  hDirInput.option("right to left", -1);
+
+  const vDirLabel = createElement(
+    "label",
+    "Select the vertical direction for the colors"
+  );
+  vDirLabel.attribute("for", "vdir");
+  vDirLabel.parent(controls);
+  vDirInput = createSelect().id("vdir").parent(controls).input(redraw);
+  vDirInput.option("top to bottom", 1);
+  vDirInput.option("bottom to top", -1);
+
+  saveButton = createButton("download image");
   saveButton.mousePressed(() =>
-    save(`${textInput.value()}_${flagInput.value()}_${formatInput.value()}.jpg`)
+    save(
+      `${textInput
+        .value()
+        .slice(0, 10)}_${flagInput.value()}_${configInput.value()}.jpg`
+    )
   );
   saveButton.parent(controls);
 
-  
+  mainCanvas = createCanvas(200 * pixelDensity(), 200 * pixelDensity());
+  mainCanvas.style("padding", "1em");
+  mainCanvas.parent(appContainer);
+  favCanvas = createGraphics(16, 16);
+
+  const exContainer = createDiv();
+  exContainer.class("explanation");
+  exContainer.parent(appContainer);
+  const how = createElement("h2", "How does it work?");
+  how.parent(exContainer);
+  const explanation = [
+    createP(
+      "First the text is split into individual characters. Next each character is translated into its numerical character code. For example, the letter Q translates to 81."
+    ),
+    createP(
+      "Then each number is translated using the number of colors in the selected flag. The non-binary flag, for example, has 4 colors, so for this flag 81 translates to 1101 in base 4."
+    ),
+    createP(
+      "After that, each digit is mapped to the corresponding color in the selected flag. The resulting colors are display left to right, top to bottom, in the selected configuration."
+    ),
+  ];
+  explanation.forEach((p) => p.parent(exContainer));
+
   const footer = createElement("footer");
   const link = createA("/", "Caleb Foss");
   link.parent(footer);
@@ -88,14 +128,19 @@ function draw() {
     .join("")
     .split("");
   const { length: encodedLength } = encoded;
-  const format = formatInput.value();
-  const args = formats[format].getArgs(encodedLength);
-  encoded.forEach((val, i) => formats[format].draw({ flag, val, i, ...args }));
+  const config = configInput.value();
+  const hDir = int(hDirInput.value());
+  const vDir = int(vDirInput.value());
+  translate(width / 2, height / 2);
+  scale(hDir, vDir);
+  translate(-width / 2, -height / 2);
+  const args = configs[config].getArgs(encodedLength);
+  encoded.forEach((val, i) => configs[config].draw({ flag, val, i, ...args }));
   favCanvas.image(mainCanvas, 0, 0, 16, 16);
   document.querySelector("#favicon").href = favCanvas.elt.toDataURL(
     "image/png"
   );
-  const {length: flagLength} = flag;
+  const { length: flagLength } = flag;
   titleSpans.forEach((span, i) => {
     span.style("color", flag[i % flagLength]);
   });
@@ -107,12 +152,12 @@ const setColor = (flag, val) => {
   stroke(flag[colorIndex]);
 };
 
-const formats = {
+const configs = {
   "horizontal stripes": {
     getArgs: (encodedLength) => ({
       stripeHeight: height / encodedLength,
     }),
-    draw: ({ flag, val, i, stripeHeight }) => {
+    draw: ({ flag, val, i, stripeHeight, vDir }) => {
       setColor(flag, val);
       rect(0, i * stripeHeight, width, stripeHeight);
     },
@@ -121,7 +166,7 @@ const formats = {
     getArgs: (encodedLength) => ({
       stripeWidth: width / encodedLength,
     }),
-    draw: ({ flag, val, i, stripeWidth }) => {
+    draw: ({ flag, val, i, stripeWidth, hDir }) => {
       setColor(flag, val);
       rect(i * stripeWidth, 0, stripeWidth, height);
     },
@@ -138,7 +183,7 @@ const formats = {
       const cellHeight = height / vDim;
       return { hDim, vDim, cellWidth, cellHeight };
     },
-    draw: ({ flag, val, i, hDim, vDim, cellWidth, cellHeight }) => {
+    draw: ({ flag, val, i, hDim, vDim, cellWidth, cellHeight, hDir, vDir }) => {
       setColor(flag, val);
       const x = (i % hDim) * cellWidth;
       const y = floor(i / hDim) * cellHeight;
