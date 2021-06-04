@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html {
+  background: #ffff;
+  font-family: "Open Sans", sans-serif;
+}
+canvas {
+  display: block;
+}
+
+header {
+  height: 10%;
+  padding: 0%;
+  margin: 0;
+  text-align: center;
+}
+
+footer {
+  height: 2%;
+  padding: 1%;
+  margin: 0;
+  text-align: right;
+}
+
+.title {
+  font-family: "Pacifico", cursive;
+  font-size: 2em;
+  text-shadow: 2px 2px black;
+}
+
+.app {
+  height: 80%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.controls {
+  border: black solid 0.5em;
+  display: grid;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+}
