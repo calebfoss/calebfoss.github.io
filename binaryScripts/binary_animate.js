@@ -115,7 +115,7 @@ graphicsCanvas.height = graphicsDim;
 const renderCanvas = document.body.appendChild(
   document.createElement("canvas")
 );
-renderCanvas.style.cursor = "pointer";
+document.body.style.cursor = "pointer";
 const renderContext = renderCanvas.getContext("2d");
 
 const image = graphicsContext.getImageData(
@@ -258,6 +258,12 @@ const animate = (frameState, currentTimestep, lastTimestep) => {
 
 const start = async () => {
   let introAnimationRequest;
+  const loadingText = "Loading...";
+  let loadingCells = new Uint8Array(numCells);
+  for (let i = 1; i < loadingText.length; i++) {
+    loadingCells = renderChar(loadingCells, loadingText.substring(0, i));
+  }
+  displayImage(loadingCells);
   const response = await fetch("https://foss-binary-server.glitch.me", {});
   const {
     cells: cellDecoded,
@@ -282,14 +288,14 @@ const start = async () => {
     lifeNeighbors,
   };
   const startAnimation = () => {
-    renderCanvas.style.cursor = "default";
+    document.body.style.cursor = "default";
     if (introAnimationRequest) cancelAnimationFrame(introAnimationRequest);
     requestAnimationFrame((timestep) =>
       animate(frameState, timestep, timestep)
     );
     document.body.removeEventListener("click", startAnimation);
   };
-  document.body.addEventListener("click", startAnimation);
+  document.addEventListener("click", startAnimation);
   const hours = Math.floor(frame / (fps * 3600))
     .toString()
     .padStart(2, "0");
