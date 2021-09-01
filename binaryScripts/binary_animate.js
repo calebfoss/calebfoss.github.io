@@ -211,7 +211,10 @@ const drawFrame = ({
         });
       cells = renderChar(cells, fullText.substring(0, textChar));
     }
-    if (++textPauseFrames == framesPerChar) {
+    if (
+      ++textPauseFrames >= framesPerChar &&
+      (textChar < fullText.length - 1 || textPauseFrames >= fps * 5)
+    ) {
       textChar++;
       textPauseFrames = 0;
     }
