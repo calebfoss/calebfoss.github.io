@@ -284,6 +284,7 @@ const start = async () => {
     requestAnimationFrame((timestep) =>
       animate(frameState, timestep, timestep)
     );
+    renderCanvas.removeEventListener("click", startAnimation);
   };
   renderCanvas.addEventListener("click", startAnimation);
   const hours = Math.floor(frame / (fps * 3600))
