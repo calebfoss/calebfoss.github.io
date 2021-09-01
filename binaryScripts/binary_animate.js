@@ -287,9 +287,9 @@ const start = async () => {
     requestAnimationFrame((timestep) =>
       animate(frameState, timestep, timestep)
     );
-    renderCanvas.removeEventListener("click", startAnimation);
+    document.body.removeEventListener("click", startAnimation);
   };
-  renderCanvas.addEventListener("click", startAnimation);
+  document.body.addEventListener("click", startAnimation);
   const hours = Math.floor(frame / (fps * 3600))
     .toString()
     .padStart(2, "0");
@@ -298,7 +298,7 @@ const start = async () => {
     .padStart(2, "0");
   const seconds = (Math.floor(frame / fps) % 60).toString().padStart(2, "0");
   const frames = (frame % fps).toString().padStart(2, "0");
-  const introText = `Binary                          by Caleb Foss                   2021                            ${hours}:${minutes}:${seconds}:${frames}`;
+  const introText = `Binary                          by Caleb Foss                   2021                            Click to play                   ${hours}:${minutes}:${seconds}:${frames}`;
   const displayIntroFrame = (cells, i) => {
     const renderedCells = renderChar(cells, introText.substring(0, i));
     displayImage(renderedCells);
