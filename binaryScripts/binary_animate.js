@@ -125,7 +125,7 @@ const image = graphicsContext.getImageData(
   graphicsCanvas.height
 );
 
-const displayImage = cells => {
+const displayImage = (cells) => {
   const numCells = cells.length;
   for (let c = 0; c < numCells; c++) {
     image.data.fill(cells[c] * 255, c * 4, c * 4 + 3);
@@ -255,10 +255,7 @@ const animate = (frameState, currentTimestep, lastTimestep) => {
 
 const start = async () => {
   let introAnimationRequest;
-  const response = await fetch(
-    "https://foss-binary-server.glitch.me",
-    {}
-  );
+  const response = await fetch("https://foss-binary-server.glitch.me", {});
   const {
     cells: cellDecoded,
     frame,
@@ -283,20 +280,29 @@ const start = async () => {
   };
   const startAnimation = () => {
     renderCanvas.style.cursor = "default";
-    if(introAnimationRequest) cancelAnimationFrame(introAnimationRequest);
-    requestAnimationFrame((timestep) => animate(frameState, timestep, timestep));
+    if (introAnimationRequest) cancelAnimationFrame(introAnimationRequest);
+    requestAnimationFrame((timestep) =>
+      animate(frameState, timestep, timestep)
+    );
   };
   renderCanvas.addEventListener("click", startAnimation);
-  const hours = Math.floor(frame / (fps * 3600));
-  const minutes = Math.floor(frame / (fps * 60)) % 60;
-  const seconds = Math.floor(frame / fps) % 60;
+  const hours = Math.floor(frame / (fps * 3600))
+    .toString()
+    .padStart(2, "0");
+  const minutes = (Math.floor(frame / (fps * 60)) % 60)
+    .toString()
+    .padStart(2, "0");
+  const seconds = (Math.floor(frame / fps) % 60).toString().padStart(2, "0");
   const frames = (frame % fps).toString().padStart(2, "0");
   const introText = `Binary                          by Caleb Foss                   2021                            ${hours}:${minutes}:${seconds}:${frames}`;
   const displayIntroFrame = (cells, i) => {
     const renderedCells = renderChar(cells, introText.substring(0, i));
     displayImage(renderedCells);
     resizeCells = renderedCells;
-    if(++i <= introText.length) introAnimationRequest = requestAnimationFrame(_ => displayIntroFrame(renderedCells, i))
+    if (++i <= introText.length)
+      introAnimationRequest = requestAnimationFrame((_) =>
+        displayIntroFrame(renderedCells, i)
+      );
   };
   displayIntroFrame(new Uint8Array(numCells), 1);
 };
