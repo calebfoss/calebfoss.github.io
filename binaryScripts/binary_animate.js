@@ -256,7 +256,7 @@ const animate = (frameState, currentTimestep, lastTimestep) => {
 const start = async () => {
   let introAnimationRequest;
   const response = await fetch(
-    "https://foss-binary-server.glitch.me/frame",
+    "https://foss-binary-server.glitch.me",
     {}
   );
   const {
@@ -291,7 +291,7 @@ const start = async () => {
   const minutes = Math.floor(frame / (fps * 60)) % 60;
   const seconds = Math.floor(frame / fps) % 60;
   const frames = (frame % fps).toString().padStart(2, "0");
-  const introText = `Binary                          by Caleb Foss                   2018-2021                       ${hours}:${minutes}:${seconds}:${frames}`;
+  const introText = `Binary                          by Caleb Foss                   2021                            ${hours}:${minutes}:${seconds}:${frames}`;
   const displayIntroFrame = (cells, i) => {
     const renderedCells = renderChar(cells, introText.substring(0, i));
     displayImage(renderedCells);
