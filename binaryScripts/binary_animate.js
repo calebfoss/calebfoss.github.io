@@ -258,9 +258,9 @@ const animate = (frameState, currentTimestep, lastTimestep) => {
 
 const start = async () => {
   let introAnimationRequest;
-  const loadingText = "Loading...";
+  const loadingText = "                Loading...";
   let loadingCells = new Uint8Array(numCells);
-  for (let i = 1; i < loadingText.length; i++) {
+  for (let i = 1; i < loadingText.length + 1; i++) {
     loadingCells = renderChar(loadingCells, loadingText.substring(0, i));
   }
   displayImage(loadingCells);
