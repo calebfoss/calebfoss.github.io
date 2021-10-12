@@ -46,8 +46,8 @@ function setup() {
     .attribute("for", "flag")
     .parent(controls);
   flagInput = createSelect(true).id("flag").changed(redraw).parent(controls);
-  Object.keys(flags).forEach((flag) => flagInput.option(flag));
-  flagInput.elt.options[0].selected = true;
+  Object.keys(flags).forEach((flag) => flagInput.option(flag, flag));
+  flagInput.selected("LGBTQ rainbow");
 
   const configLabel = createElement("label", "Configuration")
     .attribute("for", "config")
