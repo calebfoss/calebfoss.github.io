@@ -1,9 +1,11 @@
 const flags = {
   agender: ["#d3d3d3", "#e7e7e7", "#ffffff", "#e1fec8", "#ccfea2"],
+  aromantic: ["#3AA63F", "#A8D47A", "#FFFFFF", "#AAAAAA", "#000000"],
   asexual: ["#000000", "#A4A4A4", "#FFFFFF", "#810081"],
   bisexual: ["#D00070", "#8C4799", "#0032A0"],
   demiromantic: ["#000000", "#ffffff", "#d2d2d2", "#329932"],
   genderfae: ["#95c4a4", "#c2deae", "#faf9ce", "#fca3c4", "#db8ae3", "#ab7edd"],
+  genderfluid: ["#FF76A4", "#FFFFFF", "#C011D7", "#000000", "#2F3CBE"],
   "LGBTQ rainbow": ["#FF0018", "#FFA52C", "#FFFF41", "#008018", "#0000F9", "#86007D"],
   intersex: ["#d8abcf", "#ffffff", "#a1cdee", "#f0b7d6"],
   lesbian: ["#D62900", "#FF9B55", "#FFFFFF", "#D461A6", "#A50062"],
