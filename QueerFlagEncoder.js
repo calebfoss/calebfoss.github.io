@@ -97,7 +97,7 @@ function setup() {
       "Then each number is translated using the number of colors in the selected flag. The non-binary flag, for example, has 4 colors, so for this flag 81 translates to 1101 in base 4."
     ),
     createP(
-      "After that, each digit is mapped to the corresponding color in the selected flag. The resulting colors are display left to right, top to bottom, in the selected configuration."
+      "After that, each digit is mapped to the corresponding color in the selected flag. The resulting colors are displayed in the selected configuration and orientation."
     ),
   ];
   explanation.forEach((p) => p.parent(exContainer));
