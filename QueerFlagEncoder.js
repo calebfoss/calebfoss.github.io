@@ -79,8 +79,7 @@ function setup() {
   );
   saveButton.parent(controls);
 
-  const canvasDim = min(document.body.clientWidth, 200 * pixelDensity());
-  mainCanvas = createCanvas(canvasDim, canvasDim);
+  mainCanvas = createCanvas(canvasDim(), canvasDim());
   mainCanvas.style("padding", "1em");
   mainCanvas.parent(appContainer);
   favCanvas = createGraphics(16, 16);
@@ -213,3 +212,10 @@ const configs = {
     },
   },
 };
+
+const canvasDim = () =>
+  min(document.body.clientWidth, document.body.clientHeight * 0.5);
+
+function windowResized() {
+  resizeCanvas(canvasDim(), canvasDim());
+}
